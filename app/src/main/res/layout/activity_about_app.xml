@@ -1,9 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AboutAppActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/headingTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Event Expo"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#070707"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/aboutTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#070707"
+        android:text="About"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:layout_marginTop="120dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/desTV"
+        android:layout_width="278dp"
+        android:layout_height="150dp"
+        android:text="This app allows you to reserve your tickets for all kinds of events which include sportd, harvesting, painting, kayaking and many more. You can even host events through our app. Sign-up and let the events ass wings to your daily life."
+        android:textAlignment="center"
+        android:textColor="#070707"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"/>
+
+    <TextView
+        android:id="@+id/copyTV"
+        android:layout_width="244dp"
+        android:layout_height="35dp"
+        android:textColor="#070707"
+        android:text="Copyright 2020, Event Expo"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="600dp"
+        />
+
+</RelativeLayout>
