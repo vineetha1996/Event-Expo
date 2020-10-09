@@ -78,5 +78,54 @@
         android:textStyle="bold"
         android:textSize="25sp" />
 
+    <TextView
+        android:id="@+id/forgotTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_btn"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="132.5dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="132.5dp"
+        android:text="Forgot Password?"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/dontHaveAccontTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forgotTV"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="90dp"
+        android:text="Don't have an account?"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/registerTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forgotTV"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="246dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="19dp"
+        android:text="Register here"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+
 
 </RelativeLayout>
