@@ -85,5 +85,37 @@
         android:textColor="@android:color/black"
         android:textSize="16dp" />
 
+    <ImageView
+        android:id="@+id/paintimageView"
+        android:layout_width="129dp"
+        android:layout_height="102dp"
+        android:layout_below="@+id/admin_home_TitleTV"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="282dp"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/painting" />
+
+    <TextView
+        android:id="@+id/paintingTV"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kayakimageView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="5dp"
+        android:fontFamily="sans-serif"
+        android:inputType="textPersonName"
+        android:padding="20dp"
+        android:text="Painting"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="16dp" />
+
+
+
 
 </RelativeLayout>
