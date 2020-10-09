@@ -1,9 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".OrderHistoryActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/ohTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order History"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#070707"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/oh1TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#070707"
+        android:text="Event Name: Cricket tournament \n Date: 09/16/2020 \n Time: 14:00 \n Category: Kayaking \n Quantity: 1 \n Price: $100"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="120dp"/>
+
+    <TextView
+        android:id="@+id/oh2TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#070707"
+        android:text="Event Name: FootBall Tournament \n Date: 09/19/2020 \n Time: 09:00 \n Category: FootBall \n Quantity: 2 \n Price: $150*2"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="240dp"/>
+
+</RelativeLayout>
