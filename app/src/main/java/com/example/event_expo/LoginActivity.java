@@ -18,6 +18,8 @@ public class LoginActivity extends AppCompatActivity {
 
         adminLoginTV = (TextView) findViewById(R.id.adminTV);
 
+
+
         adminLoginTV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
