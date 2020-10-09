@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AboutAppActivity"></activity>
+        <activity android:name=".OrderHistoryActivity"></activity>
+        <activity android:name=".AboutAppActivity" />
         <activity android:name=".PaymentActivity" />
         <activity android:name=".Admin_home_page_Activity" />
         <activity android:name=".Add_Event_Activity" />
