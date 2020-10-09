@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".loginActivity">
+>
 
     <TextView
         android:id="@+id/titleTV"
@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/titleTV"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
         android:background="@drawable/input_design"
         android:hint="Username"
@@ -45,9 +45,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/login_usernameET"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="26dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp"
         android:background="@drawable/input_design"
@@ -67,7 +67,7 @@
         android:layout_alignParentEnd="true"
         android:layout_marginStart="100dp"
         android:layout_marginLeft="60dp"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="100dp"
         android:layout_marginRight="30dp"
         android:background="@drawable/buttons"
@@ -75,8 +75,8 @@
         android:text="Login"
         android:textAllCaps="false"
         android:textColor="@android:color/black"
-        android:textStyle="bold"
-        android:textSize="25sp" />
+        android:textSize="25sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/forgotTV"
@@ -87,7 +87,7 @@
         android:layout_alignParentEnd="true"
         android:layout_marginStart="132.5dp"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="132.5dp"
         android:text="Forgot Password?"
         android:textColor="@android:color/holo_blue_light"
@@ -103,7 +103,7 @@
         android:layout_alignParentEnd="true"
         android:layout_marginStart="50dp"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="90dp"
         android:text="Don't have an account?"
         android:textColor="@android:color/black"
@@ -118,7 +118,7 @@
         android:layout_alignParentEnd="true"
         android:layout_marginStart="246dp"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="19dp"
         android:text="Register here"
         android:textColor="@android:color/holo_blue_light"
@@ -133,8 +133,8 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="133dp"
+        android:layout_marginTop="20dp"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="45dp"
         android:layout_marginEnd="132dp"
         android:text="Admin?"
         android:textAlignment="center"

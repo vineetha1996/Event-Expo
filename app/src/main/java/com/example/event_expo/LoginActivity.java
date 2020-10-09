@@ -4,24 +4,27 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.TextView;
 
-public class Admin_login_Activity extends AppCompatActivity {
-    private Button adminLoginbtn;
+public class LoginActivity extends AppCompatActivity {
+
+    private TextView adminLoginTV;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_admin_login_);
+        setContentView(R.layout.activity_login);
 
-        adminLoginbtn=findViewById(R.id.admin_login_btn);
-        adminLoginbtn.setOnClickListener(new View.OnClickListener() {
+        adminLoginTV = (TextView) findViewById(R.id.adminTV);
+
+        adminLoginTV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent adminIntent = new Intent(Admin_login_Activity.this,Admin_home_page_Activity.class);
+                Intent adminIntent = new Intent(LoginActivity.this,Admin_login_Activity.class);
                 startActivity(adminIntent);
             }
         });
-
     }
+
 }
