@@ -14,6 +14,7 @@ public class Admin_login_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_login_);
 
+
         adminLoginbtn=findViewById(R.id.admin_login_btn);
         adminLoginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -22,6 +23,7 @@ public class Admin_login_Activity extends AppCompatActivity {
                 startActivity(adminIntent);
             }
         });
+
 
     }
 }
