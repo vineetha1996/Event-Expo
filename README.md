@@ -40,6 +40,16 @@ The following activities are taken in the device "Nexus 5X API 26".
 - If we click on the Register here TextView it navigates to the SignUp page.
 - If we click on the Admin? TextView it navigates to the Admin login page.
 
+### User Maintainence Screen:
+
+![user maintainence](https://github.com/vineetha1996/event-expo/blob/master/screens/user_matianence.JPG)
+
+- In this screen it provides a list of pages like home, profile, about app, order history.
+- If we click on home text view it navigates to user home page.
+- If we click on profile text view it navigates to the profile page.
+- If we click on about app text view it navigates to the about app page.
+- If we click on order history text view it navigates to the order history page.
+
 ### Admin Login Screen:
 ![AdminLogin Screen](https://github.com/vineetha1996/event-expo/blob/master/screens/admin_login.png)
 
