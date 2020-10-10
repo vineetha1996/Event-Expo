@@ -27,8 +27,8 @@ public class UserMaintenanceActivity extends AppCompatActivity {
         homieTV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent homeIntent = new Intent(UserMaintenanceActivity.this,UserHomeActivity.class);
-                startActivity(homeIntent);
+                Intent intent = new Intent(UserMaintenanceActivity.this,UserHomeActivity.class);
+                startActivity(intent);
             }
         });
 
