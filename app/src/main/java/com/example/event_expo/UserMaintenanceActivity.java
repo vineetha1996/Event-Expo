@@ -31,19 +31,21 @@ public class UserMaintenanceActivity extends AppCompatActivity {
             }
         });
 
-        logoutTV.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent logoutIntent = new Intent(UserMaintenanceActivity.this, LoginActivity.class);
-                startActivity(logoutIntent);
-            }
-        });
+
 
         homeTV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent homeIntent = new Intent(UserMaintenanceActivity.this,UserHomeActivity.class);
                 startActivity(homeIntent);
+            }
+        });
+
+        logoutTV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent logoutIntent = new Intent(UserMaintenanceActivity.this, LoginActivity.class);
+                startActivity(logoutIntent);
             }
         });
 
