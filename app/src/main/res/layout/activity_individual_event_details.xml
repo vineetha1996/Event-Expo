@@ -1,9 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".IndividualEventDetailsActivity">
+    tools:context=".activity_individual_event_details">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/totalTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Event Details"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/eventDisplayTV"
+        android:layout_width="349dp"
+        android:layout_height="248dp"
+        android:text="Event Name: Second Harvest Pop-Up Pantry
+        \nDate: September 23rd, 2020
+        \nTime: 10am to 12pm
+        \nDescription: Second Harvest Community Food Bank, of St. Joseph, will hold a Pop-Up Mobile Food distribution event from 10a.m. to noon on Wednesday, Sept. 23, at Smith Repair, 214 S. Coleman St."
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"/>
+
+    <TextView
+        android:id="@+id/quantityDisplayTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity: 3"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="420dp"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/addBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:backgroundTint="#95D8F6"
+        app:borderWidth="0.1dp"
+        app:fabSize="auto"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="400dp"
+        app:srcCompat="@android:drawable/ic_menu_add"
+        tools:ignore="MissingClass"/>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/minusBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:backgroundTint="#95D8F6"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="400dp"
+        app:srcCompat="@android:drawable/presence_busy"
+        tools:ignore="MissingClass"/>
+
+    <Button
+        android:id="@+id/addToCartBTN"
+        style="@android:style/Widget.DeviceDefault.Light.Button"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:background="#95D8F6"
+        android:text="Add to Cart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="550dp"
+        android:textColor="#000000" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/settingsBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#95D8F6"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="340dp"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/ic_menu_manage"
+        tools:ignore="MissingClass" />
+
+
+</RelativeLayout>
