@@ -54,7 +54,7 @@ The following activities are taken in the device "Nexus 5X API 26".
 
 ![user_home](https://github.com/vineetha1996/event-expo/blob/master/screens/user_home.JPG)
 
-In the Home page user can see the list of events.
+- In the Home page user can see the list of events.
 
 ### User profile page:
 ![User Profile](https://github.com/vineetha1996/event-expo/blob/master/screens/user_profile.png)
@@ -74,7 +74,13 @@ In the Home page user can see the list of events.
 ### Individual Events
 ![IndividualEvents](https://github.com/vineetha1996/event-expo/blob/master/screens/individual_events.JPG)
 
--User can see tha complete details of the event and book tickets.
+- User can see tha complete details of the event and book tickets.
+
+### Payment Page
+![Payment](https://github.com/vineetha1996/event-expo/blob/master/screens/payment.JPG)
+
+- User can complete the payment using his card details.
+- After the finishing the payment user will be redirected to the order history page.
 
 ### Admin Login Screen:
 ![AdminLogin Screen](https://github.com/vineetha1996/event-expo/blob/master/screens/admin_login.png)
