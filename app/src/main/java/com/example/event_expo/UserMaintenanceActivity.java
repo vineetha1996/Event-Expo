@@ -21,13 +21,7 @@ public class UserMaintenanceActivity extends AppCompatActivity {
         logoutTV = (TextView) findViewById(R.id.forgotTV);
 
 
-        homeTV.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent homeIntent = new Intent(UserMaintenanceActivity.this,UserHomeActivity.class);
-                startActivity(homeIntent);
-            }
-        });
+
 
         orderHistoryTV.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,6 +36,14 @@ public class UserMaintenanceActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent logoutIntent = new Intent(UserMaintenanceActivity.this, LoginActivity.class);
                 startActivity(logoutIntent);
+            }
+        });
+
+        homeTV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent homeIntent = new Intent(UserMaintenanceActivity.this,UserHomeActivity.class);
+                startActivity(homeIntent);
             }
         });
 
