@@ -19,6 +19,7 @@ public class Admin_home_page_Activity extends AppCompatActivity {
         userRegbtn = (Button) findViewById(R.id.user_regi_btn);
         adminlogoutbtn = (Button) findViewById(R.id.admin_logout_btn);
 
+
         eventManagementbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -45,6 +46,8 @@ public class Admin_home_page_Activity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
 
 
 
