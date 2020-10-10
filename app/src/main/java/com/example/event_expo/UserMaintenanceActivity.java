@@ -44,5 +44,14 @@ public class UserMaintenanceActivity extends AppCompatActivity {
             }
         });
 
+        profileTV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent historyIntent = new Intent(UserMaintenanceActivity.this, UserProfileActivity.class);
+                startActivity(historyIntent);
+            }
+        });
+
+
     }
 }
