@@ -38,6 +38,14 @@ The following activities are taken in the device "Nexus 5X API 26".
 - When we click on the User Registration it navigates to the Registered events data where we can find user registered events data.
 - When we click on the Logout button it navigates to the main login page.
 
+### Maintain Evet Page:
+
+![Maintain Event](https://github.com/vineetha1996/event-expo/blob/master/screens/maintain_events.png)
+
+### Registered Events Page:
+
+![User Registration](https://github.com/vineetha1996/event-expo/blob/master/screens/regist_event.png)
+
 ### Reset Password Page:
 ![Reset Password](https://github.com/vineetha1996/event-expo/blob/master/screens/reset_password.png)
 
@@ -47,6 +55,11 @@ The following activities are taken in the device "Nexus 5X API 26".
 ![Signup page](https://github.com/vineetha1996/event-expo/blob/master/screens/signup.png)
 
 - If the user is new to the app he should signup first by giving the details which have asked.
+
+### User profile page:
+![User Profile](https://github.com/vineetha1996/event-expo/blob/master/screens/user_profile.png)
+
+- User can maintain his profile by updating the required fields.
 
 ### Oder History Page:
 ![Order History](https://github.com/vineetha1996/event-expo/blob/master/screens/order_history.png)
