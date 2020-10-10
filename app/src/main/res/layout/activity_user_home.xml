@@ -34,13 +34,13 @@
         android:textColor="#000000"
         android:textSize="18sp" />
 
-    <SearchView
-        android:id="@+id/searchBoxET"
-        android:layout_width="264dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="40dp"
-        android:background="#95D8F6" />
+<!--    <SearchView-->
+<!--        android:id="@+id/searchBoxET"-->
+<!--        android:layout_width="264dp"-->
+<!--        android:layout_height="35dp"-->
+<!--        android:layout_marginStart="25dp"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:background="#95D8F6" />-->
 
     <Button
         android:id="@+id/bookNowBTN1"
@@ -64,40 +64,40 @@
         android:text="Book Now"
         android:textSize="14dp" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/shareBTN1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        app:backgroundTint="#95D8F6"
-        android:layout_marginTop="200dp"
-        android:layout_marginStart="320dp"
-        app:srcCompat="?attr/actionModeShareDrawable"
-        />
+<!--    <android.support.design.widget.FloatingActionButton-->
+<!--        android:id="@+id/shareBTN1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:clickable="true"-->
+<!--        app:backgroundTint="#95D8F6"-->
+<!--        android:layout_marginTop="200dp"-->
+<!--        android:layout_marginStart="320dp"-->
+<!--        app:srcCompat="?attr/actionModeShareDrawable"-->
+<!--        />-->
 
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/shareBTN2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        android:layout_marginTop="380dp"
-        android:layout_marginStart="320dp"
-        app:backgroundTint="#95D8F6"
-        app:srcCompat="?attr/actionModeShareDrawable"
-        tools:ignore="MissingClass" />
+<!--    <android.support.design.widget.FloatingActionButton-->
+<!--        android:id="@+id/shareBTN2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:clickable="true"-->
+<!--        android:layout_marginTop="380dp"-->
+<!--        android:layout_marginStart="320dp"-->
+<!--        app:backgroundTint="#95D8F6"-->
+<!--        app:srcCompat="?attr/actionModeShareDrawable"-->
+<!--        tools:ignore="MissingClass" />-->
 
 
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/settingsBTN"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#95D8F6"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="340dp"
-        android:clickable="true"
-        app:srcCompat="@android:drawable/ic_menu_manage"
-        tools:ignore="MissingClass" />
+<!--    <android.support.design.widget.FloatingActionButton-->
+<!--        android:id="@+id/settingsBTN"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:backgroundTint="#95D8F6"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginStart="340dp"-->
+<!--        android:clickable="true"-->
+<!--        app:srcCompat="@android:drawable/ic_menu_manage"-->
+<!--        tools:ignore="MissingClass" />-->
 
 </RelativeLayout>
