@@ -38,3 +38,8 @@ The following activities are taken in the device "Nexus 5X API 26".
 - When we click on the User Registration it navigates to the Registered events data where we can find user registered events data.
 - When we click on the Logout button it navigates to the main login page.
 
+### Reset Password Page:
+![Reset Password](https://github.com/vineetha1996/event-expo/blob/master/screens/reset_password.png)
+
+- In this page user can reset his password by giving the email address and new password and then click on the update button.
+
