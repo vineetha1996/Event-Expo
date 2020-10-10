@@ -23,7 +23,7 @@
         android:textSize="35sp"
         android:textStyle="bold"/>
 
-    <EditText
+    <TextView
         android:id="@+id/homeTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -43,7 +43,7 @@
         android:textColorHint="@android:color/background_dark"
         android:textSize="19sp" />
 
-    <EditText
+    <TextView
         android:id="@+id/profileTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -63,7 +63,7 @@
         android:textColorHint="@android:color/background_dark"
         android:textSize="19sp" />
 
-    <EditText
+    <TextView
         android:id="@+id/aboutappTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -83,7 +83,7 @@
         android:textColorHint="@android:color/background_dark"
         android:textSize="19sp" />
 
-    <EditText
+    <TextView
         android:id="@+id/order_historyTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
