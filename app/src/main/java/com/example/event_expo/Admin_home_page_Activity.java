@@ -5,18 +5,19 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class Admin_home_page_Activity extends AppCompatActivity {
     private Button eventManagementbtn, userRegbtn, adminlogoutbtn;
     private TextView kayakTV, TennisTV, pettingTV, harvestTV, soccerTV, paintingTV;
+    private ImageView kayakIV, tennisIV, pettingIV, harvestIV, soccerIV, paintingIV;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_home_page_);
-
         eventManagementbtn = (Button) findViewById(R.id.event_management_btn);
         userRegbtn = (Button) findViewById(R.id.user_regi_btn);
         adminlogoutbtn = (Button) findViewById(R.id.admin_logout_btn);
@@ -37,12 +38,67 @@ public class Admin_home_page_Activity extends AppCompatActivity {
             }
         });
 
+        kayakIV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Admin_home_page_Activity.this, Add_Event_Activity.class );
+                startActivity(intent);
+            }
+        });
+
+        tennisIV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Admin_home_page_Activity.this, Add_Event_Activity.class );
+                startActivity(intent);
+            }
+        });
+
+        harvestIV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Admin_home_page_Activity.this, Add_Event_Activity.class );
+                startActivity(intent);
+            }
+        });
+
+        pettingIV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Admin_home_page_Activity.this, Add_Event_Activity.class );
+                startActivity(intent);
+            }
+        });
+
+        soccerIV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Admin_home_page_Activity.this, Add_Event_Activity.class );
+                startActivity(intent);
+            }
+        });
+
+        paintingIV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Admin_home_page_Activity.this, Add_Event_Activity.class );
+                startActivity(intent);
+            }
+        });
+
+        kayakTV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Admin_home_page_Activity.this, Add_Event_Activity.class );
+                startActivity(intent);
+
+            }
+        });
         userRegbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent userIntent = new Intent(Admin_home_page_Activity.this,RegisterEventsActivity.class);
                 startActivity(userIntent);
-
             }
         });
 
@@ -54,12 +110,47 @@ public class Admin_home_page_Activity extends AppCompatActivity {
             }
         });
 
+        soccerTV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Admin_home_page_Activity.this, Add_Event_Activity.class );
+                startActivity(intent);
 
+            }
+        });
 
+        paintingTV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Admin_home_page_Activity.this, Add_Event_Activity.class );
+                startActivity(intent);
 
+            }
+        });
 
+        pettingTV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Admin_home_page_Activity.this, Add_Event_Activity.class );
+                startActivity(intent);
 
+            }
+        });
 
+        harvestTV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Admin_home_page_Activity.this, Add_Event_Activity.class );
+                startActivity(intent);
+            }
+        });
 
+        TennisTV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Admin_home_page_Activity.this, Add_Event_Activity.class );
+                startActivity(intent);
+            }
+        });
     }
 }
