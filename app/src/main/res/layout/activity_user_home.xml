@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/event_displayTV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="120dp"
+        android:text="Event Name: Cricket Tournament
+        \nDate: 09/16/2020
+        \nTime: 14:00
+        \nCategory: Cricket
+        \nDescription: Sample Description."
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/event_displayTV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="320dp"
+        android:text="Event Name: Football Tournament
+        \nDate: 09/19/2020
+        \nTime: 09:00
+        \nCategory: Football
+        \nDescription: Sample Description."
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <SearchView
+        android:id="@+id/searchBoxET"
+        android:layout_width="264dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="40dp"
+        android:background="#95D8F6" />
+
+    <Button
+        android:id="@+id/bookNowBTN1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="240dp"
+        android:background="#95D8F6"
+        android:text="Book Now"
+        android:textSize="14dp" />
+
+    <Button
+        android:id="@+id/bookNowBTN2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="440dp"
+        android:background="#95D8F6"
+        android:text="Book Now"
+        android:textSize="14dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/shareBTN1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:backgroundTint="#95D8F6"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="320dp"
+        app:srcCompat="?attr/actionModeShareDrawable"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/shareBTN2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_marginTop="380dp"
+        android:layout_marginStart="320dp"
+        app:backgroundTint="#95D8F6"
+        app:srcCompat="?attr/actionModeShareDrawable"
+        tools:ignore="MissingClass" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/settingsBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#95D8F6"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="340dp"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/ic_menu_manage"
+        tools:ignore="MissingClass" />
+
+</RelativeLayout>
