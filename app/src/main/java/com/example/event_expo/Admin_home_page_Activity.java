@@ -29,7 +29,6 @@ public class Admin_home_page_Activity extends AppCompatActivity {
             }
         });
 
-
         userRegbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
