@@ -4,11 +4,13 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class LoginActivity extends AppCompatActivity {
 
     private TextView adminLoginTV, registerTV;
+    private Button loginbtn;
 
 
     @Override
@@ -18,6 +20,7 @@ public class LoginActivity extends AppCompatActivity {
 
         adminLoginTV = (TextView) findViewById(R.id.adminTV);
         registerTV = (TextView) findViewById(R.id.registerTV);
+        loginbtn = (Button) findViewById(R.id.login_btn);
 
         adminLoginTV.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,6 +37,16 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(regiIntent);
             }
         });
+
+        loginbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent loginIntent = new Intent(LoginActivity.this, UserHomeActivity.class);
+                startActivity(loginIntent);
+            }
+        });
+
+
     }
 
 }
