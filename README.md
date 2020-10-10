@@ -48,3 +48,13 @@ The following activities are taken in the device "Nexus 5X API 26".
 
 - If the user is new to the app he should signup first by giving the details which have asked.
 
+### Oder History Page:
+![Order History](https://github.com/vineetha1996/event-expo/blob/master/screens/order_history.png)
+
+- User can see his order history in this page.
+
+### About App Page:
+![About App](https://github.com/vineetha1996/event-expo/blob/master/screens/about_app.png)
+
+- This page describes about our application.
+
