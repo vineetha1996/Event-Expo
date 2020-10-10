@@ -4,11 +4,13 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class UserMaintenanceActivity extends AppCompatActivity {
 
-    TextView homeTV,profileTV,orderHistoryTV,logoutTV;
+    private TextView homeTV,profileTV,orderHistoryTV;
+    private Button logoutbtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +20,7 @@ public class UserMaintenanceActivity extends AppCompatActivity {
         homeTV = (TextView) findViewById(R.id.adminTV);
         profileTV = (TextView) findViewById(R.id.registerTV);
         orderHistoryTV = (TextView) findViewById(R.id.forgotTV);
-        logoutTV = (TextView) findViewById(R.id.forgotTV);
+        logoutbtn = (Button) findViewById(R.id.logout_btn);
 
         homeTV.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,7 +30,7 @@ public class UserMaintenanceActivity extends AppCompatActivity {
             }
         });
 
-        logoutTV.setOnClickListener(new View.OnClickListener() {
+        logoutbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent logoutIntent = new Intent(UserMaintenanceActivity.this, LoginActivity.class);

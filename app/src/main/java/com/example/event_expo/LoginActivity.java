@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 public class LoginActivity extends AppCompatActivity {
 
-    private TextView adminLoginTV, registerTV;
+    private TextView adminLoginTV, registerTV, forgotTV;
     private Button loginbtn;
 
 
@@ -21,6 +21,7 @@ public class LoginActivity extends AppCompatActivity {
         adminLoginTV = (TextView) findViewById(R.id.adminTV);
         registerTV = (TextView) findViewById(R.id.registerTV);
         loginbtn = (Button) findViewById(R.id.login_btn);
+        forgotTV = (TextView) findViewById(R.id.forgotTV);
 
         adminLoginTV.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,11 +42,18 @@ public class LoginActivity extends AppCompatActivity {
         loginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent loginIntent = new Intent(LoginActivity.this, UserHomeActivity.class);
+                Intent loginIntent = new Intent(LoginActivity.this, UserMaintenanceActivity.class);
                 startActivity(loginIntent);
             }
         });
 
+        forgotTV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent forgotIntent = new Intent(LoginActivity.this, ProfileActivity.class);
+                startActivity(forgotIntent);
+            }
+        });
 
     }
 
