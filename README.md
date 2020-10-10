@@ -83,7 +83,7 @@ The following activities are taken in the device "Nexus 5X API 26".
 - User can see his order history in this page.
 
 ### About App Page:
-![About App](https://github.com/vineetha1996/event-expo/blob/master/screens/about_app.png)
+![About App](https://github.com/vineetha1996/event-expo/blob/master/screens/about_app.JPG)
 
 - This page describes about our application.
 
