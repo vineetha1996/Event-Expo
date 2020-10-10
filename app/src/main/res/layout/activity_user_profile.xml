@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProfileActivity">
+    tools:context=".UserProfileActivity">
 
     <TextView
-        android:id="@+id/resetTV"
+        android:id="@+id/profileTV"
         android:layout_width="368dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -18,16 +18,16 @@
         android:fontFamily="sans-serif"
         android:textAlignment="center"
         android:gravity="center_horizontal"
-        android:text="Reset Password"
+        android:text="PROFILE"
         android:textColor="@android:color/background_dark"
         android:textSize="35sp"
         android:textStyle="bold"/>
 
     <EditText
-        android:id="@+id/user_nameTV"
+        android:id="@+id/first_nameTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/resetTV"
+        android:layout_below="@+id/profileTV"
         android:layout_alignParentStart="true"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
@@ -35,7 +35,7 @@
         android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp"
         android:background="@drawable/input_design"
-        android:hint="Username"
+        android:hint="First Name"
         android:textAlignment="center"
         android:inputType="textPersonName"
         android:padding="20dp"
@@ -44,10 +44,49 @@
         android:textSize="19sp" />
 
     <EditText
+        android:id="@+id/last_nameTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first_nameTV"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/input_design"
+        android:hint="Last Name"
+        android:textAlignment="center"
+        android:inputType="textPersonName"
+        android:padding="20dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="19sp" />
+
+    <EditText
+        android:id="@+id/mob_numTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/last_nameTV"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/input_design"
+        android:hint="Mobile Number"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:padding="20dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="19sp" />
+    <EditText
         android:id="@+id/user_emailTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/user_nameTV"
+        android:layout_below="@+id/mob_numTV"
         android:layout_alignParentStart="true"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
@@ -63,71 +102,11 @@
         android:textColorHint="@android:color/background_dark"
         android:textSize="19sp" />
 
-    <EditText
-        android:id="@+id/mobile_numTV"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/user_emailTV"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
-        android:background="@drawable/input_design"
-        android:hint="Mobile Number"
-        android:inputType="number"
-        android:textAlignment="center"
-        android:padding="20dp"
-        android:textColor="@android:color/black"
-        android:textColorHint="@android:color/background_dark"
-        android:textSize="19sp" />
-
-    <EditText
-        android:id="@+id/user_passwordTV"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/mobile_numTV"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
-        android:hint="Password"
-        android:inputType="textPassword"
-        android:textAlignment="center"
-        android:padding="20dp"
-        android:background="@drawable/input_design"
-        android:textColor="@android:color/black"
-        android:textColorHint="@android:color/background_dark"
-        android:textSize="19sp" />
-
-    <EditText
-        android:id="@+id/user_compassTV"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/user_passwordTV"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
-        android:background="@drawable/input_design"
-        android:hint="Confirm Password"
-        android:inputType="textPassword"
-        android:textAlignment="center"
-        android:padding="20dp"
-        android:textColor="@android:color/black"
-        android:textColorHint="@android:color/background_dark"
-        android:textSize="19sp" />
-
     <Button
-        android:id="@+id/update_btn"
+        android:id="@+id/submit_btn"
         android:layout_width="210dp"
         android:layout_height="80dp"
-        android:layout_below="@+id/user_compassTV"
+        android:layout_below="@+id/user_emailTV"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="100dp"
@@ -137,9 +116,10 @@
         android:layout_marginRight="30dp"
         android:background="@drawable/buttons"
         android:padding="17dp"
-        android:text="Update"
+        android:text="Submit"
         android:textAllCaps="false"
         android:textColor="@android:color/black"
         android:textStyle="bold"
         android:textSize="25sp"/>
+
 </RelativeLayout>
