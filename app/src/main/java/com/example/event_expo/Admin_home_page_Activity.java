@@ -5,9 +5,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class Admin_home_page_Activity extends AppCompatActivity {
     private Button eventManagementbtn, userRegbtn, adminlogoutbtn;
+    private TextView kayakTV, TennisTV, pettingTV, harvestTV, soccerTV, paintingTV;
 
 
     @Override
@@ -18,6 +20,12 @@ public class Admin_home_page_Activity extends AppCompatActivity {
         eventManagementbtn = (Button) findViewById(R.id.event_management_btn);
         userRegbtn = (Button) findViewById(R.id.user_regi_btn);
         adminlogoutbtn = (Button) findViewById(R.id.admin_logout_btn);
+        kayakTV = (TextView) findViewById(R.id.kayakTV);
+        TennisTV = (TextView) findViewById(R.id.tennisTV);
+        harvestTV = (TextView) findViewById(R.id.harvestinggTV);
+        soccerTV = (TextView) findViewById(R.id.soccerTV);
+        paintingTV = (TextView) findViewById(R.id.paintingTV);
+        pettingTV = (TextView) findViewById(R.id.pettingTV);
 
 
         eventManagementbtn.setOnClickListener(new View.OnClickListener() {

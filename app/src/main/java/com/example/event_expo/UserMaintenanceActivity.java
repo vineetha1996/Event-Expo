@@ -32,8 +32,6 @@ public class UserMaintenanceActivity extends AppCompatActivity {
             }
         });
 
-
-
         logoutbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
