@@ -12,6 +12,22 @@ EventExpo app allows users to reserve tickets for all kinds of events which incl
 ## Main Feature:
 Booking different Categories and different kinds of Events like Kayaking, Painting, Cricket Online in one application.
 
+## Risky Components:
+##### Uses an outside API:
+- The app will be hosted on an external API, i.e., Gennymotion. This will give us clearer idea about layout and navigation of the pages developed.
+##### Requires Functionality NOT discussed:
+- As we will be using Firebase for real-time data handling, it will be a bit difficult to navigate through this new functionalities, adding and retreiving data.
+##### Requires Functionality will be discussed:
+- Data base services and handling is yet to be understood and will be discussed later.
+
+## Individual Contributions:
+
+- [Vineetha Yenugula](https://github.com/vineetha1996/event-expo/commits?author=vineetha1996)
+- [Annie samarpitha Chandolu](https://github.com/vineetha1996/event-expo/commits?author=annie0sc)
+- [Alekhya Jaddu](https://github.com/vineetha1996/event-expo/commits?author=alekhyajaddu)
+- [BhanuPrakash Thota](https://github.com/vineetha1996/event-expo/commits?author=BhanuprakashThota)
+
+
 ## Activities/Screens:
 The following activities are taken in the device "Nexus 5X API 26".
 
