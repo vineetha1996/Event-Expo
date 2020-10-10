@@ -25,8 +25,16 @@ The following activities are taken in the device "Nexus 5X API 26".
 - If we click on the Admin? TextView it navigates to the Admin login page.
 
 ### Admin Login Screen:
-![Login Screen](https://github.com/vineetha1996/event-expo/blob/master/screens/admin_login.png)
+![AdminLogin Screen](https://github.com/vineetha1996/event-expo/blob/master/screens/admin_login.png)
 
 - Admin should enter username and passwotd to login as a admin.
 - When we click on the Login button it navigates to the Admin Home page.
+
+### Admin Home page:
+![Admin Home](https://github.com/vineetha1996/event-expo/blob/master/screens/admin_home.png)
+
+- Admin home page where admin can add, delete the events and maintain user details.
+- When we click on the Event Management button it navigates to Maintain Event page where we have event details like name, date, time, category and description.
+- When we click on the User Registration it navigates to the Registered events data where we can find user registered events data.
+- When we click on the Logout button it navigates to the main login page.
 
