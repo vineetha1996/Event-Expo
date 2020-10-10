@@ -50,6 +50,32 @@ The following activities are taken in the device "Nexus 5X API 26".
 - If we click on about app text view it navigates to the about app page.
 - If we click on order history text view it navigates to the order history page.
 
+### User Home Page:
+
+![user_home](https://github.com/vineetha1996/event-expo/blob/master/screens/user_home.JPG)
+
+In the Home page user can see the list of events.
+
+### User profile page:
+![User Profile](https://github.com/vineetha1996/event-expo/blob/master/screens/user_profile.png)
+
+- User can maintain his profile by updating the required fields.
+
+### About App Page:
+![About App](https://github.com/vineetha1996/event-expo/blob/master/screens/about_app.JPG)
+
+- This page describes about our application.
+
+### Order History Page:
+![Order History](https://github.com/vineetha1996/event-expo/blob/master/screens/order_history.png)
+
+- User can see his order history in this page.
+
+### Individual Events
+![IndividualEvents](https://github.com/vineetha1996/event-expo/blob/master/screens/individual_events.JPG)
+
+-User can see tha complete details of the event and book tickets.
+
 ### Admin Login Screen:
 ![AdminLogin Screen](https://github.com/vineetha1996/event-expo/blob/master/screens/admin_login.png)
 
@@ -81,19 +107,4 @@ The following activities are taken in the device "Nexus 5X API 26".
 ![Signup page](https://github.com/vineetha1996/event-expo/blob/master/screens/signup.png)
 
 - If the user is new to the app he should signup first by giving the details which have asked.
-
-### User profile page:
-![User Profile](https://github.com/vineetha1996/event-expo/blob/master/screens/user_profile.png)
-
-- User can maintain his profile by updating the required fields.
-
-### Oder History Page:
-![Order History](https://github.com/vineetha1996/event-expo/blob/master/screens/order_history.png)
-
-- User can see his order history in this page.
-
-### About App Page:
-![About App](https://github.com/vineetha1996/event-expo/blob/master/screens/about_app.JPG)
-
-- This page describes about our application.
 
