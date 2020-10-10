@@ -18,5 +18,25 @@ public class UserHomeActivity extends AppCompatActivity {
         bookbtn2 = (Button) findViewById(R.id.bookNowBTN2);
 
 
+        bookbtn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent i=new Intent(UserHomeActivity.this, IndividualEventDetailsActivity.class);
+                startActivity(i);
+
+            }
+        });
+           bookbtn2.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                    Intent i=new Intent(UserHomeActivity.this, PaymentActivity.class);
+                    startActivity(i);
+
+                }
+        });
+
+
     }
 }
