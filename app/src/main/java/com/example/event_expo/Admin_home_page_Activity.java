@@ -29,21 +29,20 @@ public class Admin_home_page_Activity extends AppCompatActivity {
         });
 
 
-
-        adminlogoutbtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Admin_home_page_Activity.this, LoginActivity.class);
-                startActivity(intent);
-            }
-        });
-
         userRegbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent userIntent = new Intent(Admin_home_page_Activity.this,RegisterEventsActivity.class);
                 startActivity(userIntent);
 
+            }
+        });
+
+        adminlogoutbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Admin_home_page_Activity.this, LoginActivity.class);
+                startActivity(intent);
             }
         });
 
