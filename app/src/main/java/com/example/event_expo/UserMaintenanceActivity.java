@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 public class UserMaintenanceActivity extends AppCompatActivity {
 
-    private TextView homeiTV,profileTV,orderHistoryTV, aboutTV;
+    private TextView homieTV,profileTV,orderHistoryTV, aboutTV;
     private Button logoutbtn;
 
     @Override
@@ -17,19 +17,22 @@ public class UserMaintenanceActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_maintenance);
 
-        homeiTV = (TextView) findViewById(R.id.homeTV);
+
         profileTV = (TextView) findViewById(R.id.profileTV);
         orderHistoryTV = (TextView) findViewById(R.id.order_historyTV);
         logoutbtn = (Button) findViewById(R.id.logout_btn);
         aboutTV = (TextView) findViewById(R.id.aboutappTV);
+        homieTV = (TextView) findViewById(R.id.homeTV);
 
-        homeiTV.setOnClickListener(new View.OnClickListener() {
+        homieTV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent homeIntent = new Intent(UserMaintenanceActivity.this,UserHomeActivity.class);
+                Intent homeIntent = new Intent(UserMaintenanceActivity.this,UserHomeActivity);
                 startActivity(homeIntent);
             }
         });
+
+
 
         logoutbtn.setOnClickListener(new View.OnClickListener() {
             @Override
