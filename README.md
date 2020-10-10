@@ -17,5 +17,10 @@ The following activities are taken in the device "Nexus 5X API 26".
 
 ### Login Screen:
 
-!(https://github.com/vineetha1996/event-expo/blob/master/screens/admin_login.png)
+![Login Screen](https://github.com/vineetha1996/event-expo/blob/master/screens/admin_login.png)
+
+- In the login screen user should enter username and password to login in to the application.
+- If we click on the forgotpassword? TextView it navigates to the reset password page.
+- If we click on the Register here TextView it navigates to the SignUp page.
+- If we click on the Admin? TextView it navigates to the Admin login page.
 
