@@ -11,3 +11,11 @@ EventExpo app allows users to reserve tickets for all kinds of events which incl
 
 ## Main Feature:
 Booking different Categories and different kinds of Events like Kayaking, Painting, Cricket Online in one application.
+
+## Activities/Screens:
+The following activities are taken in the device "Nexus 5X API 26".
+
+### Login Screen:
+
+!(https://github.com/vineetha1996/event-expo/blob/master/screens/admin_login.png)
+
