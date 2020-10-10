@@ -12,8 +12,10 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:textColor="#070707"
+        android:textAlignment="center"
         android:inputType="textPersonName"
         android:hint="Email"
+        android:background="@drawable/input_design"
         android:layout_marginTop="290dp"
         android:layout_centerHorizontal="true"/>
 
@@ -24,6 +26,8 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:hint="Username"
+        android:background="@drawable/input_design"
+        android:textAlignment="center"
         android:layout_marginTop="220dp"
         android:layout_centerHorizontal="true" />
 
@@ -34,6 +38,8 @@
         android:layout_marginTop="140dp"
         android:layout_marginBottom="603dp"
         android:text="Profile"
+
+        android:textAlignment="center"
         android:textColor="#070707"
         android:textSize="36sp"
         android:textStyle="bold"
@@ -46,6 +52,8 @@
         android:ems="10"
         android:textColor="#070707"
         android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:background="@drawable/input_design"
         android:hint="MobileNumber"
         android:layout_marginTop="360dp"
         android:layout_centerHorizontal="true" />
@@ -55,9 +63,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:textAlignment="center"
         android:inputType="textPersonName"
         android:textColor="#070707"
         android:hint="Password"
+        android:background="@drawable/input_design"
         android:layout_marginTop="430dp"
         android:layout_centerHorizontal="true" />
 
@@ -65,8 +75,10 @@
         android:id="@+id/editTextTextPersonName5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/input_design"
         android:ems="10"
         android:inputType="textPersonName"
+        android:textAlignment="center"
         android:textColor="#070707"
         android:hint="Confrim Password"
         android:layout_marginTop="500dp"
@@ -78,8 +90,9 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="580dp"
-        android:background="#95D8F6"
+        android:background="@drawable/buttons"
         android:text="Update"
-        android:textColor="#FAF6F6" />
+        android:textStyle="bold"
+        android:textColor="@android:color/black" />
 
 </RelativeLayout>
