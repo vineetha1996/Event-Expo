@@ -11,8 +11,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:textColor="#070707"
         android:inputType="textPersonName"
-        android:hint="@string/useremail"
+        android:hint="Email"
         android:layout_marginTop="290dp"
         android:layout_centerHorizontal="true"/>
 
@@ -22,7 +23,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:hint="@string/username"
+        android:hint="Username"
         android:layout_marginTop="220dp"
         android:layout_centerHorizontal="true" />
 
@@ -33,6 +34,7 @@
         android:layout_marginTop="140dp"
         android:layout_marginBottom="603dp"
         android:text="Profile"
+        android:textColor="#070707"
         android:textSize="36sp"
         android:textStyle="bold"
         android:layout_centerHorizontal="true" />
@@ -42,8 +44,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:textColor="#070707"
         android:inputType="textPersonName"
-        android:hint="@string/MobileNumber"
+        android:hint="MobileNumber"
         android:layout_marginTop="360dp"
         android:layout_centerHorizontal="true" />
 
@@ -53,7 +56,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:hint="@string/password"
+        android:textColor="#070707"
+        android:hint="Password"
         android:layout_marginTop="430dp"
         android:layout_centerHorizontal="true" />
 
@@ -63,7 +67,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:hint="@string/confrimPassword"
+        android:textColor="#070707"
+        android:hint="Confrim Password"
         android:layout_marginTop="500dp"
         android:layout_centerHorizontal="true" />
 
