@@ -33,9 +33,10 @@
 
     <TextView
         android:id="@+id/desTV"
-        android:layout_width="278dp"
+        android:layout_width="300dp"
         android:layout_height="150dp"
-        android:text="This app allows you to reserve your tickets for all kinds of events which include sportd, harvesting, painting, kayaking and many more. You can even host events through our app. Sign-up and let the events ass wings to your daily life."
+        android:background="@drawable/input_design"
+        android:text="\nThis app allows you to reserve your tickets for all kinds of events which include sportd, harvesting, painting, kayaking and many more. You can even host events through our app. Sign-up and let the events ass wings to your daily life."
         android:textAlignment="center"
         android:textColor="#070707"
         android:layout_centerHorizontal="true"

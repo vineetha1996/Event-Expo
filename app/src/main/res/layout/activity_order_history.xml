@@ -22,20 +22,22 @@
 
     <TextView
         android:id="@+id/oh1TV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="270dp"
+        android:layout_height="138dp"
         android:textColor="#070707"
-        android:text="Event Name: Cricket tournament \n Date: 09/16/2020 \n Time: 14:00 \n Category: Kayaking \n Quantity: 1 \n Price: $100"
+        android:text="\nEvent Name: Cricket tournament \n Date: 09/16/2020 \n Time: 14:00 \n Category: Kayaking \n Quantity: 1 \n Price: $100"
         android:layout_marginStart="55dp"
+        android:background="@drawable/input_design"
         android:layout_marginTop="120dp"/>
 
     <TextView
         android:id="@+id/oh2TV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="270dp"
+        android:layout_height="138dp"
         android:textColor="#070707"
-        android:text="Event Name: FootBall Tournament \n Date: 09/19/2020 \n Time: 09:00 \n Category: FootBall \n Quantity: 2 \n Price: $150*2"
+        android:background="@drawable/input_design"
+        android:text="\n Event Name: FootBall Tournament \n Date: 09/19/2020 \n Time: 09:00 \n Category: FootBall \n Quantity: 2 \n Price: $150*2"
         android:layout_marginStart="55dp"
-        android:layout_marginTop="240dp"/>
+        android:layout_marginTop="300dp"/>
 
 </RelativeLayout>
