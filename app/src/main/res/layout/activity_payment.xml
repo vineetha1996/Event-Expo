@@ -1,9 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PaymentActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/paymentTV"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="sans-serif"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:text="Payment"
+        android:textColor="@android:color/background_dark"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/cardNameET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/paymentTV"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/input_design"
+        android:hint="Enter the Name on Card"
+        android:inputType="textPersonName"
+        android:padding="20dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="19sp" />
+
+    <EditText
+        android:id="@+id/cardNumberET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardNameET"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/input_design"
+        android:hint="Enter Card Number"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="19sp" />
+
+    <EditText
+        android:id="@+id/dateET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardNumberET"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/input_design"
+        android:hint="Enter Card Expiration Date"
+        android:inputType="date"
+        android:padding="20dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="19sp" />
+
+
+    <Button
+        android:id="@+id/makePaymentBTN"
+        android:layout_width="210dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/dateET"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/buttons"
+        android:padding="17dp"
+        android:text="Make Payment"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="25sp"/>
+
+</RelativeLayout>

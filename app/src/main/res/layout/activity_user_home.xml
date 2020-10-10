@@ -64,7 +64,7 @@
         android:text="Book Now"
         android:textSize="14dp" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    <android.support.design.widget.FloatingActionButton
         android:id="@+id/shareBTN1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -75,7 +75,8 @@
         app:srcCompat="?attr/actionModeShareDrawable"
         />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+    <android.support.design.widget.FloatingActionButton
         android:id="@+id/shareBTN2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -86,7 +87,9 @@
         app:srcCompat="?attr/actionModeShareDrawable"
         tools:ignore="MissingClass" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+
+    <android.support.design.widget.FloatingActionButton
         android:id="@+id/settingsBTN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
