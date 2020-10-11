@@ -27,6 +27,12 @@ public class Admin_home_page_Activity extends AppCompatActivity {
         soccerTV = (TextView) findViewById(R.id.soccerTV);
         paintingTV = (TextView) findViewById(R.id.paintingTV);
         pettingTV = (TextView) findViewById(R.id.pettingTV);
+        kayakIV = (ImageView) findViewById(R.id.kayakimageView);
+        tennisIV = (ImageView) findViewById(R.id.tennisimageView6);
+        harvestIV = (ImageView) findViewById(R.id.harvestimageView);
+        soccerIV = (ImageView) findViewById(R.id.soccerimageView);
+        paintingIV = (ImageView) findViewById(R.id.paintimageView);
+        pettingIV = (ImageView) findViewById(R.id.pettingimageView);
 
 
         eventManagementbtn.setOnClickListener(new View.OnClickListener() {
@@ -38,13 +44,6 @@ public class Admin_home_page_Activity extends AppCompatActivity {
             }
         });
 
-        kayakIV.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Admin_home_page_Activity.this, Add_Event_Activity.class );
-                startActivity(intent);
-            }
-        });
 
         tennisIV.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -106,6 +105,14 @@ public class Admin_home_page_Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Admin_home_page_Activity.this, LoginActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        kayakIV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Admin_home_page_Activity.this, Add_Event_Activity.class );
                 startActivity(intent);
             }
         });

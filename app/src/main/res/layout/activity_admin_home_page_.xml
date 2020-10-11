@@ -55,7 +55,7 @@
         android:textSize="16dp" />
 
     <ImageView
-        android:id="@+id/cricketimageView"
+        android:id="@+id/pettingimageView"
         android:layout_width="114dp"
         android:layout_height="104dp"
         android:layout_below="@+id/admin_home_TitleTV"
