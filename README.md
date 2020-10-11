@@ -82,6 +82,17 @@ The following activities are taken in the device "Nexus 5X API 26".
 - User can complete the payment using his card details.
 - After the finishing the payment user will be redirected to the order history page.
 
+### Reset Password Page:
+![Reset Password](https://github.com/vineetha1996/event-expo/blob/master/screens/reset_password.png)
+
+- In this page user can reset his password by giving the email address and new password and then click on the update button.
+
+### Signup page:
+![Signup page](https://github.com/vineetha1996/event-expo/blob/master/screens/signup.png)
+
+- If the user is new to the app he should signup first by giving the details which have asked.
+
+
 ### Admin Login Screen:
 ![AdminLogin Screen](https://github.com/vineetha1996/event-expo/blob/master/screens/admin_login.png)
 
@@ -96,21 +107,22 @@ The following activities are taken in the device "Nexus 5X API 26".
 - When we click on the User Registration it navigates to the Registered events data where we can find user registered events data.
 - When we click on the Logout button it navigates to the main login page.
 
-### Maintain Evet Page:
+### Maintain Event Page:
 
 ![Maintain Event](https://github.com/vineetha1996/event-expo/blob/master/screens/maintain_events.png)
+
+- Where admin can maintain all the events and their data.
 
 ### Registered Events Page:
 
 ![User Registration](https://github.com/vineetha1996/event-expo/blob/master/screens/regist_event.png)
 
-### Reset Password Page:
-![Reset Password](https://github.com/vineetha1996/event-expo/blob/master/screens/reset_password.png)
+- Where admin can manage the events which users have registered.
 
-- In this page user can reset his password by giving the email address and new password and then click on the update button.
+### Add event page:
 
-### Signup page:
-![Signup page](https://github.com/vineetha1996/event-expo/blob/master/screens/signup.png)
+![User Registration](https://github.com/vineetha1996/event-expo/blob/master/screens/add_event.png)
 
-- If the user is new to the app he should signup first by giving the details which have asked.
+- Where admin can add event details to the database.
+
 
