@@ -53,8 +53,5 @@ String username=    user_nameTV.getText().toString();
         });
 
 
-
-
-
     }
 }
