@@ -25,22 +25,22 @@ public class UserHomeActivity extends AppCompatActivity {// MainActivity extends
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_user_home);
-
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
-
-        mAdapter = new EventDetailsAdaptor(movieList);
-        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
-        recyclerView.setLayoutManager(mLayoutManager);
-        recyclerView.setItemAnimator(new DefaultItemAnimator());
-
-
-        recyclerView.setAdapter(mAdapter);
-
-        populateData();
+//        setContentView(R.layout.activity_user_home);
+//
+//        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+//
+//        mAdapter = new EventDetailsAdaptor(movieList);
+//        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
+//        recyclerView.setLayoutManager(mLayoutManager);
+//        recyclerView.setItemAnimator(new DefaultItemAnimator());
+//
+//
+//        recyclerView.setAdapter(mAdapter);
+//
+//        populateData();
     }
 
-    private void populateData() {
+//    private void populateData() {
 
 //        String[] tvseries = new String[]{
 //                "https://wallpapersite.com/images/pages/pic_w/14693.jpg",
@@ -56,39 +56,38 @@ public class UserHomeActivity extends AppCompatActivity {// MainActivity extends
 //
 //        };
 
-        EventDetails tv = new EventDetails("Arrow","7.5","2012");
-        movieList.add(tv);
+//        EventDetails tv = new EventDetails("Arrow","7.5","2012");
+//        movieList.add(tv);
 
-        tv = new EventDetails("SuperGirl","6.7","2015");
-        movieList.add(tv);
-
-        tv = new EventDetails("The BlackList","7.7","2013");
-        movieList.add(tv);
-
-        tv = new EventDetails("Lucifer","9.2","2015");
-        movieList.add(tv);
-
-        tv = new EventDetails("The Big Bang Theory","6.4","2007");
-        movieList.add(tv);
-
-        tv = new EventDetails("Flash","6.9","2014");
-        movieList.add(tv);
-
-        tv = new EventDetails("Game of Thrones","9.4","2011");
-        movieList.add(tv);
-
-        tv = new EventDetails("The 100","7.4","2014");
-        movieList.add(tv);
-
-        tv = new EventDetails("Agent of Sheild","8.2","2013");
-        movieList.add(tv);
-
-        tv = new EventDetails("Daredevil","6.9","2015");
-        movieList.add(tv);
-
-
-        mAdapter.notifyDataSetChanged();
-    }
+//        tv = new EventDetails("SuperGirl","6.7","2015");
+//        movieList.add(tv);
+//
+//        tv = new EventDetails("The BlackList","7.7","2013");
+//        movieList.add(tv);
+//
+//        tv = new EventDetails("Lucifer","9.2","2015");
+//        movieList.add(tv);
+//
+//        tv = new EventDetails("The Big Bang Theory","6.4","2007");
+//        movieList.add(tv);
+//
+//        tv = new EventDetails("Flash","6.9","2014");
+//        movieList.add(tv);
+//
+//        tv = new EventDetails("Game of Thrones","9.4","2011");
+//        movieList.add(tv);
+//
+//        tv = new EventDetails("The 100","7.4","2014");
+//        movieList.add(tv);
+//
+//        tv = new EventDetails("Agent of Sheild","8.2","2013");
+//        movieList.add(tv);
+//
+//        tv = new EventDetails("Daredevil","6.9","2015");
+//        movieList.add(tv);
+//
+//        mAdapter.notifyDataSetChanged();
+//    }
 
 }
 

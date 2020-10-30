@@ -19,7 +19,6 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
         adminLoginTV = (TextView) findViewById(R.id.adminTV);
         registerTV = (TextView) findViewById(R.id.registerTV);
         loginbtn = (Button) findViewById(R.id.login_btn);
@@ -31,15 +30,16 @@ public class LoginActivity extends AppCompatActivity {
         Intent intent=getIntent() ;
              final String   fullname= intent.getStringExtra("USER_name");
              String  email=intent.getStringExtra("USER_email");
-        String  phn=intent.getStringExtra("USER_phn");
-        final String  pass=intent.getStringExtra("USER_pass");
+             String  phn=intent.getStringExtra("USER_phn");
+             final String  pass=intent.getStringExtra("USER_pass");
 
         Log.d("suma", fullname+email+phn+pass);
 
         adminLoginTV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent adminIntent = new Intent(LoginActivity.this,Admin_login_Activity.class);
+                Intent adminIntent = new Intent(LoginActivity.this,
+                        Admin_login_Activity.class);
                 startActivity(adminIntent);
             }
         });
@@ -56,21 +56,14 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-
                if(fullname.equals(login_usernameET.getText().toString())&& pass.equals(login_password_ET.getText().toString())){
-
-
-                   Intent loginIntent = new Intent(LoginActivity.this, UserHomeActivity.class);
+                   Intent loginIntent = new Intent(LoginActivity.this, UserMaintenanceActivity.class);
                    startActivity(loginIntent);
-
                }
-else{
-
+        else{
                }
-
             }
         });
-
         forgotTV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -78,7 +71,5 @@ else{
                 startActivity(forgotIntent);
             }
         });
-
     }
-
 }

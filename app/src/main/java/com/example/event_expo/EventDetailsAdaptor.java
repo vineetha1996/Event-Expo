@@ -24,7 +24,7 @@ public class EventDetailsAdaptor extends RecyclerView.Adapter<EventDetailsAdapto
             event_name = (TextView) view.findViewById(R.id.event_name_TV);
             date = (TextView) view.findViewById(R.id.event_date_TV);
             time = (TextView) view.findViewById(R.id.event_time_TV);
-            category = (TextView) view.findViewById(R.id.event_category_TV);
+            //category = (TextView) view.findViewById(R.id.event_category_TV);
             desc = (TextView) view.findViewById(R.id.event_description_TV);
         }
     }
