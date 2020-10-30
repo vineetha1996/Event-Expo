@@ -116,7 +116,6 @@
         android:layout_marginRight="20dp"
         android:background="@drawable/input_design"
         android:hint="Mobile Number"
-        android:inputType="number"
         android:textAlignment="center"
         android:padding="20dp"
         android:textColor="@android:color/black"
