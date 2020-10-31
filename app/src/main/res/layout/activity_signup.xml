@@ -42,6 +42,7 @@
         android:textColor="@android:color/black"
         android:textColorHint="@android:color/background_dark"
         android:textSize="19sp" />
+
     <EditText
         android:id="@+id/user_Fullname"
         android:layout_width="match_parent"
@@ -55,7 +56,7 @@
         android:layout_marginRight="20dp"
         android:background="@drawable/input_design"
         android:hint="Full Name"
-        android:inputType="textPassword"
+        android:inputType="textPersonName"
         android:textAlignment="center"
         android:padding="15dp"
         android:textColor="@android:color/black"
