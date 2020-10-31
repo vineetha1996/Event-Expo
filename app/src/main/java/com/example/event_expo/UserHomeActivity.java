@@ -1,23 +1,20 @@
 package com.example.event_expo;
 
-/**
- Created by udara abeythilake
- 19/05/2019
- **/
-
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.content.Context;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class UserHomeActivity extends AppCompatActivity {// MainActivity extends AppCompatActivity {
 
-    private List<EventDetails> movieList = new ArrayList<>();
+    private List<EventDetails> eventList = new ArrayList<>();
     private RecyclerView recyclerView;
     private EventDetailsAdaptor mAdapter;
     private Context context;
@@ -25,70 +22,41 @@ public class UserHomeActivity extends AppCompatActivity {// MainActivity extends
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_user_home);
-//
-//        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
-//
-//        mAdapter = new EventDetailsAdaptor(movieList);
-//        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
-//        recyclerView.setLayoutManager(mLayoutManager);
-//        recyclerView.setItemAnimator(new DefaultItemAnimator());
-//
-//
-//        recyclerView.setAdapter(mAdapter);
-//
-//        populateData();
+        setContentView(R.layout.activity_user_home);
+
+        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+
+        mAdapter = new EventDetailsAdaptor(eventList);
+        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
+        recyclerView.setLayoutManager(mLayoutManager);
+        recyclerView.setItemAnimator(new DefaultItemAnimator());
+
+
+        recyclerView.setAdapter(mAdapter);
+
+        populateData();
     }
 
-//    private void populateData() {
+    private void populateData() {
 
-//        String[] tvseries = new String[]{
-//                "https://wallpapersite.com/images/pages/pic_w/14693.jpg",
-//                "https://wallpapersite.com/images/pages/pic_w/9678.jpg",
-//                "https://stmed.net/sites/default/files/the-blacklist-wallpapers-31695-8813388.jpg",
-//                "https://stmed.net/sites/default/files/styles/1280×720/public/lucifer-wallpapers-31613-6873183.jpg?itok=74jI2BiU",
-//                "https://stmed.net/sites/default/files/styles/1280×720/public/the-big-bang-theory-wallpapers-31694-2815088.jpg?itok=K_MjM_rv",
-//                "https://wallpapersite.com/images/pages/pic_w/1658.jpg",
-//                "https://i.ytimg.com/vi/IsMRioOpZrY/maxresdefault.jpg",
-//                "https://stmed.net/sites/default/files/styles/1280×720/public/the-100-wallpapers-31691-3965773.jpg?itok=GIFpBqsA",
-//                "https://wallpapercave.com/wp/wp1865530.jpg",
-//                "https://wallpapersite.com/images/pages/pic_w/17210.jpg",
-//
-//        };
 
-//        EventDetails tv = new EventDetails("Arrow","7.5","2012");
-//        movieList.add(tv);
+        EventDetails tv = new EventDetails("Kayaking", "09-20-2020", "14:00", "Sports", "Fun group boating for students.");
+        eventList.add(tv);
 
-//        tv = new EventDetails("SuperGirl","6.7","2015");
-//        movieList.add(tv);
-//
-//        tv = new EventDetails("The BlackList","7.7","2013");
-//        movieList.add(tv);
-//
-//        tv = new EventDetails("Lucifer","9.2","2015");
-//        movieList.add(tv);
-//
-//        tv = new EventDetails("The Big Bang Theory","6.4","2007");
-//        movieList.add(tv);
-//
-//        tv = new EventDetails("Flash","6.9","2014");
-//        movieList.add(tv);
-//
-//        tv = new EventDetails("Game of Thrones","9.4","2011");
-//        movieList.add(tv);
-//
-//        tv = new EventDetails("The 100","7.4","2014");
-//        movieList.add(tv);
-//
-//        tv = new EventDetails("Agent of Sheild","8.2","2013");
-//        movieList.add(tv);
-//
-//        tv = new EventDetails("Daredevil","6.9","2015");
-//        movieList.add(tv);
-//
-//        mAdapter.notifyDataSetChanged();
-//    }
+        EventDetails tv1 = new EventDetails("Strawberry Picking", "08-08-2020", "16:00", "Harvesting", "Enjoy fresh  organic strawberries with your friends and family.");
+        eventList.add(tv1);
 
+        EventDetails tv2 = new EventDetails("Pumpkin Carving", "10-25-2020", "15:30", "Art&Crafts", "What screams more than pumpkins for Halloween?");
+        eventList.add(tv2);
+
+        EventDetails tv3 = new EventDetails("Cricket Match", "10-17-2020", "17:30", "Sports", "Watch the Challengers VS the Fighters game for the Winter Cup!");
+        eventList.add(tv3);
+
+        EventDetails tv4 = new EventDetails("Prom Night", "11-23-2020", "19:30", "Group Events", "Have the time of your lives this year! Don't forget to wear your masks and maintain social distancing :D");
+        eventList.add(tv4);
+
+        mAdapter.notifyDataSetChanged();
+    }
 }
 
 //
