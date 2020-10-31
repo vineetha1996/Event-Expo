@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<android.support.v7.widget.CardView
+<androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:id="@+id/card_view"
@@ -19,10 +19,10 @@
         android:clickable="true"
         android:focusable="true"
         android:orientation="vertical">
-<!--        <ImageView-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="200dp"-->
-<!--            android:id="@+id/image_view"/>-->
+        <!--        <ImageView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="200dp"-->
+        <!--            android:id="@+id/image_view"/>-->
         <LinearLayout
             android:elevation="100dp"
             android:layout_width="match_parent"
@@ -32,24 +32,12 @@
             >
 
 
-            <TextView
-                android:layout_gravity="center"
-                android:id="@+id/name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:textColor="@color/cardview_dark_background"
-                android:textSize="40dp"
-                android:textStyle="bold"
-                android:text=""
-                />
-
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="left">
                 <TextView
-                    android:id="@+id/lbl_rating"
+                    android:id="@+id/event_name_TV"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Event Name:"
@@ -57,8 +45,8 @@
                     android:textSize="20dp"/>
                 <TextView
                     android:layout_marginLeft="10dp"
-                    android:layout_toRightOf="@+id/lbl_rating"
-                    android:id="@+id/rating"
+                    android:layout_toRightOf="@+id/event_name_TV"
+                    android:id="@+id/eventname"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=""
@@ -72,7 +60,7 @@
                 android:layout_height="wrap_content">
 
                 <TextView
-                    android:id="@+id/lbl_year"
+                    android:id="@+id/event_date_TV"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Date:"
@@ -80,9 +68,9 @@
                     android:textSize="20dp"/>
 
                 <TextView
-                    android:layout_toRightOf="@+id/lbl_year"
+                    android:layout_toRightOf="@+id/event_date_TV"
                     android:layout_marginLeft="10dp"
-                    android:id="@+id/year"
+                    android:id="@+id/date"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=""
@@ -96,7 +84,7 @@
                 android:layout_height="wrap_content">
 
                 <TextView
-                    android:id="@+id/lbl_year"
+                    android:id="@+id/event_time_TV"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Time:"
@@ -104,9 +92,9 @@
                     android:textSize="20dp"/>
 
                 <TextView
-                    android:layout_toRightOf="@+id/lbl_year"
+                    android:layout_toRightOf="@+id/event_time_TV"
                     android:layout_marginLeft="10dp"
-                    android:id="@+id/year"
+                    android:id="@+id/time"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=""
@@ -120,7 +108,7 @@
                 android:layout_height="wrap_content">
 
                 <TextView
-                    android:id="@+id/lbl_year"
+                    android:id="@+id/event_cat_TV"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Category:"
@@ -128,9 +116,9 @@
                     android:textSize="20dp"/>
 
                 <TextView
-                    android:layout_toRightOf="@+id/lbl_year"
+                    android:layout_toRightOf="@+id/event_cat_TV"
                     android:layout_marginLeft="10dp"
-                    android:id="@+id/year"
+                    android:id="@+id/cat"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=""
@@ -144,7 +132,7 @@
                 android:layout_height="wrap_content">
 
                 <TextView
-                    android:id="@+id/lbl_desc"
+                    android:id="@+id/event_description_TV"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Description:"
@@ -152,9 +140,9 @@
                     android:textSize="20dp"/>
 
                 <TextView
-                    android:layout_toRightOf="@+id/lbl_year"
+                    android:layout_toRightOf="@+id/event_description_TV"
                     android:layout_marginLeft="10dp"
-                    android:id="@+id/event_description_TV"
+                    android:id="@+id/desc"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=""
@@ -166,5 +154,5 @@
 
 
     </FrameLayout>
-</android.support.v7.widget.CardView>
+</androidx.cardview.widget.CardView>
 
