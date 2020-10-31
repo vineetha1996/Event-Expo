@@ -38,11 +38,10 @@ public class SignupActivity extends AppCompatActivity {
                 String password=    user_passwordTV.getText().toString();
                 String confirm=    user_compassTV.getText().toString();
                 String fullname=    user_Fullname.getText().toString();
+                //splitting the given full name to first name and last name.
                 String[] arr=fullname.split(" ");
-
                 String frstname=arr[0];
                 String lastname=arr[1];
-
                 Log.d("First name",frstname);
                 Log.d("last name",lastname);
 

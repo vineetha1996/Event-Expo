@@ -50,16 +50,5 @@ public class UserProfileActivity extends AppCompatActivity {
         });
 
 
-
-
-
-
-
-
-
-
-
-
-
     }
 }
