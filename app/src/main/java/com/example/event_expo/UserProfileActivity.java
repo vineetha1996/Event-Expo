@@ -24,12 +24,10 @@ public class UserProfileActivity extends AppCompatActivity {
         userlastname = findViewById(R.id.last_nameTV);
         submit = findViewById(R.id.submit_btn);
 
-
+        //getting the passed values from userMaintenace activity.
         Intent intent=getIntent() ;
-        //u_name = intent.getStringExtra("u_name");
         u_email =intent.getStringExtra("u_email");
         u_phn = intent.getStringExtra("u_phone");
-        //u_pass = intent.getStringExtra("USER_pass");
         u_frstname = intent.getStringExtra("u_Frstname");
         u_lastname = intent.getStringExtra("u_Lastname");
 
