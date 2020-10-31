@@ -56,11 +56,17 @@ public class UserMaintenanceActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent historyIntent = new Intent(UserMaintenanceActivity.this, UserProfileActivity.class);
+                //navigating values from userMaintenanceActivity to userProfileActivity
                 historyIntent.putExtra("u_name", name);
+
                 historyIntent.putExtra("u_email", emailid);
+
                 historyIntent.putExtra("u_phone", phone);
+
                 historyIntent.putExtra("u_Frstname", firstname);
+
                 historyIntent.putExtra("u_Lastname", lastname);
+
                 historyIntent.putExtra("u_password", password);
 
                 startActivity(historyIntent);
