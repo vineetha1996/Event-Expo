@@ -33,11 +33,15 @@ public class UserProfileActivity extends AppCompatActivity {
 
 
         Log.d("profile",u_frstname+u_lastname+ u_phn+u_email);
+
+
+
+
+        //Setting those passed values in the profile activity after getting clicked the profile button.
         userfirstname.setText(u_frstname);
         userlastname.setText(u_lastname);
         mobilenumber.setText(u_phn);
         useremail.setText(u_email);
-
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
