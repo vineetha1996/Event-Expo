@@ -115,7 +115,7 @@ The following activities are taken in the device "Nexus 5X API 26".
 
 ### Registered Events Page:
 
-![User Registration](https://github.com/vineetha1996/event-expo/blob/master/screens/regist_event.png)
+![User Registration](https://github.com/vineetha1996/event-expo/blob/master/screens/register_events.png)
 
 - Where admin can manage the events which users have registered.
 
