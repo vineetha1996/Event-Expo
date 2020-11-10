@@ -11,8 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class SignupActivity extends AppCompatActivity {
 
-
-   EditText user_nameTV,user_emailTV,mobile_numTV,user_passwordTV,user_compassTV,user_Fullname;
+   EditText user_nameTV,user_emailTV,mobile_numTV,user_passwordTV,user_compassTV,user_fnameTV, user_lnameTV;
     Button submit_btn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +22,8 @@ public class SignupActivity extends AppCompatActivity {
         mobile_numTV=findViewById(R.id.mobile_numTV);
         user_passwordTV=findViewById(R.id.user_passwordTV);
         user_compassTV=findViewById(R.id.user_compassTV);
-        user_Fullname = findViewById(R.id.user_Fullname);
+        user_fnameTV = findViewById(R.id.user_fnameTV);
+        user_lnameTV = findViewById(R.id.user_lnameTV);
         submit_btn=findViewById(R.id.submit_btn);
 
 
@@ -38,20 +38,20 @@ public class SignupActivity extends AppCompatActivity {
                 String number=    mobile_numTV.getText().toString();
                 String password=    user_passwordTV.getText().toString();
                 String confirm=    user_compassTV.getText().toString();
-                String fullname=    user_Fullname.getText().toString();
+                String fname= user_fnameTV.getText().toString();
+                String lname= user_lnameTV.getText().toString();
+//                String fullname=    user_Fullname.getText().toString();
                 //splitting the given full name to first name and last name.
-                String[] arr=fullname.split(" ");
-                String frstname=arr[0];
-                String lastname=arr[1];
-                Log.d("First name",frstname);
-                Log.d("last name",lastname);
+//
+//                Log.d("First name",frstname);
+//                Log.d("last name",lastname);
 
                 Intent intent = new Intent(SignupActivity.this,LoginActivity.class);
                 intent.putExtra("USER_name", username);
                 intent.putExtra("USER_email", email);
                 intent.putExtra("USER_phn", number);
-                intent.putExtra("USER_Frstname", frstname);
-                intent.putExtra("USER_Lastname", lastname);
+                intent.putExtra("USER_Frstname", fname);
+                intent.putExtra("USER_Lastname", lname);
                 intent.putExtra("USER_pass", password);
                 startActivity(intent);
             }
