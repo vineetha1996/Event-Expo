@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -57,12 +58,13 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if(fullname.equals(login_usernameET.getText().toString())&& pass.equals(login_password_ET.getText().toString())){
+                if(fullname.equals(login_usernameET.getText().toString()) && pass.equals(login_password_ET.getText().toString())){
 
                     Intent loginIntent = new Intent(LoginActivity.this, UserMaintenanceActivity.class);
                     startActivity(loginIntent);
                 }
                 else{
+                    Toast.makeText(getApplicationContext(),"Enter registered username and password",Toast.LENGTH_SHORT).show();
                 }
             }
         });
