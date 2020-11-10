@@ -68,12 +68,12 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-<<<<<<< HEAD
+
                 if(username.equals(login_usernameET.getText().toString())&& pass.equals(login_password_ET.getText().toString())){
 
-=======
-                if(fullname.equals(login_usernameET.getText().toString()) && pass.equals(login_password_ET.getText().toString())){
->>>>>>> 26e2abfa6d6f46926e87ca4dcd53218069c57669
+//
+//                if(fullname.equals(login_usernameET.getText().toString()) && pass.equals(login_password_ET.getText().toString())){
+
 
                     Intent loginIntent = new Intent(LoginActivity.this, UserMaintenanceActivity.class);
                     loginIntent.putExtra("loname", username);
@@ -87,11 +87,11 @@ public class LoginActivity extends AppCompatActivity {
                     startActivity(loginIntent);
                 }
                 else{
-<<<<<<< HEAD
+
                     Toast.makeText(getApplicationContext(), "Username and Password are incorrect", Toast.LENGTH_SHORT).show();
-=======
+
                     Toast.makeText(getApplicationContext(),"Enter registered username and password",Toast.LENGTH_SHORT).show();
->>>>>>> 26e2abfa6d6f46926e87ca4dcd53218069c57669
+
                 }
             }
         });
