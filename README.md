@@ -57,7 +57,7 @@ The following activities are taken in the device "Nexus 5X API 26".
 - In the Home page user can see the list of events.
 
 ### User profile page:
-![User Profile](https://github.com/vineetha1996/event-expo/blob/master/screens/user_profile.png)
+![User Profile](https://github.com/vineetha1996/event-expo/blob/master/screens/profile.JPG)
 
 - User can maintain his profile by updating the required fields.
 
