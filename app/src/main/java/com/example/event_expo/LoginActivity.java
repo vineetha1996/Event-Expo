@@ -9,18 +9,44 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.event_expo.model.User;
+import com.example.event_expo.other.Constants;
+import com.example.event_expo.other.SharedPref;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QuerySnapshot;
 
 public class LoginActivity extends AppCompatActivity {
 
     private TextView adminLoginTV, registerTV, forgotTV;
     private Button loginbtn;
+    private FirebaseFirestore db;
     EditText login_usernameET,login_password_ET;
     String username,email,phn,pass,frstname,lastname;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        db = FirebaseFirestore.getInstance();
+
+        SharedPref sharedPref = SharedPref.getInstance();
+        String loginType = sharedPref.isLoggedIn(this);
+        if (!loginType.isEmpty()){
+            Intent intent;
+            if (loginType.equals(Constants.admin)){
+                intent = new Intent(this,Admin_home_page_Activity.class);
+            }else{
+                intent = new Intent(this,UserMaintenanceActivity.class);
+            }
+            startActivity(intent);
+            finish();
+        }
+
         adminLoginTV = (TextView) findViewById(R.id.adminTV);
         registerTV = (TextView) findViewById(R.id.registerTV);
         loginbtn = (Button) findViewById(R.id.login_btn);
@@ -67,56 +93,64 @@ public class LoginActivity extends AppCompatActivity {
         loginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String username = login_usernameET.getText().toString();
+                String password = login_password_ET.getText().toString();
 
+                if (!validateInputs(username,password)) return;
 
-                if(username.equals(login_usernameET.getText().toString())&& pass.equals(login_password_ET.getText().toString())){
-
-//
-//                if(fullname.equals(login_usernameET.getText().toString()) && pass.equals(login_password_ET.getText().toString())){
-
-
-                    Intent loginIntent = new Intent(LoginActivity.this, UserMaintenanceActivity.class);
-                    loginIntent.putExtra("loname", username);
-                    loginIntent.putExtra("loemail", email);
-                    loginIntent.putExtra("lophone", phn);
-                    loginIntent.putExtra("loFrstname", frstname);
-                    loginIntent.putExtra("loLastname", lastname);
-                    loginIntent.putExtra("lopassword", pass);
-                    Log.d("Login activity", username+frstname+lastname+email+phn+pass);
-
-                    startActivity(loginIntent);
-                }
-                else{
-
-                    Toast.makeText(getApplicationContext(), "Username and Password are incorrect", Toast.LENGTH_SHORT).show();
-
-                    Toast.makeText(getApplicationContext(),"Enter registered username and password",Toast.LENGTH_SHORT).show();
-
-                }
+                loginUser(username,password);
             }
         });
 
-
-//
-//        loginbtn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-//                if(fullname.equals(login_usernameET.getText().toString())&& pass.equals(login_password_ET.getText().toString())){
-//
-//                    Intent loginIntent = new Intent(LoginActivity.this, UserMaintenanceActivity.class);
-//                    startActivity(loginIntent);
-//                }
-//                else{
-//                }
-//            }
-//        });
         forgotTV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent forgotIntent = new Intent(LoginActivity.this, ProfileActivity.class);
+                Intent forgotIntent = new Intent(LoginActivity.this, ForgotPasswordActivity.class);
                 startActivity(forgotIntent);
             }
         });
     }
+
+    private boolean validateInputs(String username,String password){
+        if (username.isEmpty()){
+            Toast.makeText(this, getString(R.string.username_cannot_empty), Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        if (password.isEmpty()){
+            Toast.makeText(this, getString(R.string.password_cannot_empty), Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        return true;
+    }
+
+    private void loginUser(String username,String password){
+
+        db.collection(Constants.user)
+                .whereEqualTo(Constants.username,username)
+                .whereEqualTo(Constants.password,password)
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()){
+                            if (task.getResult().size()==1){
+                                SharedPref sharedPref = SharedPref.getInstance();
+                                sharedPref.setLoginType(LoginActivity.this,Constants.user);
+                                sharedPref.setUserDocumentID(LoginActivity.this,task.getResult().getDocuments().get(0).getId());
+                                sharedPref.setUser(LoginActivity.this,task.getResult().getDocuments().get(0).toObject(User.class));
+                                Intent loginIntent = new Intent(LoginActivity.this, UserMaintenanceActivity.class);
+                                startActivity(loginIntent);
+                                finish();
+                            }else{
+                                Toast.makeText(LoginActivity.this, getString(R.string.wrong_credentials), Toast.LENGTH_SHORT).show();
+                            }
+                        }else{
+                            Toast.makeText(LoginActivity.this,getString(R.string.please_try_again), Toast.LENGTH_SHORT).show();
+                        }
+
+                    }
+                });
+
+    }
+
 }
