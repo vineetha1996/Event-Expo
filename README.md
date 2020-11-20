@@ -100,7 +100,7 @@ The following activities are taken in the device "Nexus 5X API 26".
 - When we click on the Login button it navigates to the Admin Home page.
 
 ### Admin Home page:
-![Admin Home](https://github.com/vineetha1996/event-expo/blob/master/screens/admin_home.png)
+![Admin Home](https://github.com/vineetha1996/event-expo/blob/master/screens/adminHome.JPG)
 
 - Admin home page where admin can add, delete the events and maintain user details.
 - When we click on the Event Management button it navigates to Maintain Event page where we have event details like name, date, time, category and description.
@@ -109,7 +109,7 @@ The following activities are taken in the device "Nexus 5X API 26".
 
 ### Maintain Event Page:
 
-![Maintain Event](https://github.com/vineetha1996/event-expo/blob/master/screens/maintain_events.png)
+![Maintain Event](https://github.com/vineetha1996/event-expo/blob/master/screens/maintainEvents.JPG)
 
 - Where admin can maintain all the events and their data.
 
