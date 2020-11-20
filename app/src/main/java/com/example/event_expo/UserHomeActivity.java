@@ -1,102 +1,73 @@
 package com.example.event_expo;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.content.Context;
+import android.widget.Toast;
 
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.event_expo.adapter.EventAdapter;
+import com.example.event_expo.adapter.UserEventAdapter;
+import com.example.event_expo.listener.OnEventClickListener;
+import com.example.event_expo.model.Event;
+import com.example.event_expo.other.Constants;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class UserHomeActivity extends AppCompatActivity {// MainActivity extends AppCompatActivity {
+public class UserHomeActivity extends AppCompatActivity implements OnEventClickListener {
 
-    private List<EventDetails> eventList = new ArrayList<>();
     private RecyclerView recyclerView;
-    private EventDetailsAdaptor mAdapter;
-    private Context context;
+    private FirebaseFirestore db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_home);
 
+        db = FirebaseFirestore.getInstance();
+
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
-
-        mAdapter = new EventDetailsAdaptor(eventList);
-        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
-        recyclerView.setLayoutManager(mLayoutManager);
-        recyclerView.setItemAnimator(new DefaultItemAnimator());
-
-
-        recyclerView.setAdapter(mAdapter);
-
-        populateData();
+        fetchEvents();
     }
 
-    private void populateData() {
+    private void fetchEvents() {
+        db.collection(Constants.event)
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()){
+                            ArrayList<Event> events = new ArrayList<>();
+                            for (QueryDocumentSnapshot item : task.getResult()){
+                                events.add(item.toObject(Event.class));
+                            }
+                            UserEventAdapter adapter = new UserEventAdapter(events,UserHomeActivity.this);
+                            recyclerView.setAdapter(adapter);
+                        }else{
+                            Toast.makeText(UserHomeActivity.this, getString(R.string.please_try_again), Toast.LENGTH_SHORT).show();
+                        }
 
+                    }
+                });
 
-        EventDetails tv = new EventDetails("Kayaking", "09-20-2020", "14:00", "Sports", "Fun group boating for students.");
-        eventList.add(tv);
+    }
 
-        EventDetails tv1 = new EventDetails("Strawberry Picking", "08-08-2020", "16:00", "Harvesting", "Enjoy fresh  organic strawberries with your friends and family.");
-        eventList.add(tv1);
-
-        EventDetails tv2 = new EventDetails("Pumpkin Carving", "10-25-2020", "15:30", "Art&Crafts", "What screams more than pumpkins for Halloween?");
-        eventList.add(tv2);
-
-        EventDetails tv3 = new EventDetails("Cricket Match", "10-17-2020", "17:30", "Sports", "Watch the Challengers VS the Fighters game for the Winter Cup!");
-        eventList.add(tv3);
-
-        EventDetails tv4 = new EventDetails("Prom Night", "11-23-2020", "19:30", "Group Events", "Have the time of your lives this year! Don't forget to wear your masks and maintain social distancing :D");
-        eventList.add(tv4);
-
-        mAdapter.notifyDataSetChanged();
+    @Override
+    public void onEventClick(Event event,int position) {
+        Intent intent = new Intent(this,IndividualEventDetailsActivity.class);
+        intent.putExtra(Constants.event,event);
+        startActivity(intent);
     }
 }
-
-//
-//import android.content.Intent;
-//import android.support.v7.app.AppCompatActivity;
-//import android.os.Bundle;
-//import android.view.View;
-//import android.widget.Button;
-//
-//public class UserHomeActivity extends AppCompatActivity {
-//    private Button bookbtn1, bookbtn2;
-//
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_user_home);
-//
-//        bookbtn1 = (Button) findViewById(R.id.bookNowBTN1);
-//        bookbtn2 = (Button) findViewById(R.id.bookNowBTN2);
-//
-//
-//        bookbtn1.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-//                Intent i=new Intent(UserHomeActivity.this, IndividualEventDetailsActivity.class);
-//                startActivity(i);
-//
-//            }
-//        });
-//           bookbtn2.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View view) {
-//
-//                    Intent i=new Intent(UserHomeActivity.this, PaymentActivity.class);
-//                    startActivity(i);
-//
-//                }
-//        });
-//
-//
-//    }
-//}
