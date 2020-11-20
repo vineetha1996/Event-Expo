@@ -107,6 +107,11 @@ The following activities are taken in the device "Nexus 5X API 26".
 - When we click on the User Registration it navigates to the Registered events data where we can find user registered events data.
 - When we click on the Logout button it navigates to the main login page.
 
+### Add events with pre-filled category
+![AdminPrefilled](https://github.com/vineetha1996/event-expo/blob/master/screens/imageAdd.JPG)
+
+- On clicking the image button in the admin home page, it redirects to add event page with pre-filled category name.
+
 ### Maintain Event Page:
 
 ![Maintain Event](https://github.com/vineetha1996/event-expo/blob/master/screens/maintainEvents.JPG)
