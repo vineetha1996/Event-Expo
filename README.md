@@ -42,7 +42,7 @@ The following activities are taken in the device "Nexus 5X API 26".
 
 ### User Maintainence Screen:
 
-![user maintainence](https://github.com/vineetha1996/event-expo/blob/master/screens/user_matianence.JPG)
+![user maintainence](https://github.com/vineetha1996/event-expo/blob/master/screens/userMaintainence.JPG)
 
 - In this screen it provides a list of pages like home, profile, about app, order history.
 - If we click on home text view it navigates to user home page.
@@ -52,7 +52,7 @@ The following activities are taken in the device "Nexus 5X API 26".
 
 ### User Home Page:
 
-![user_home](https://github.com/vineetha1996/event-expo/blob/master/screens/user_home.JPG)
+![user_home](https://github.com/vineetha1996/event-expo/blob/master/screens/userHome.JPG)
 
 - In the Home page user can see the list of events.
 
