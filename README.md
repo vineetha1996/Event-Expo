@@ -35,11 +35,14 @@ The following activities are taken in the device "Nexus 5X API 26".
 
 ![Login Screen](https://github.com/vineetha1996/event-expo/blob/master/screens/login.png)
 
-- In the login screen user should enter username and password to login in to the application.
-- If we click on the forgotpassword? TextView it navigates to the reset password page.
-- If we click on the Register here TextView it navigates to the SignUp page.
-- If we click on the Admin? TextView it navigates to the Admin login page.
-
+- If the user is using this application for the first time he needs to register first by filling all the deails that are asked in the register page.
+- The given data will be stored in the firebase so that the user don't need to register everytime,when he want to use the application he can simply login with the username
+  and matching password.
+- If the user forgot the password to get signin he can reset his password by clicking on the forgot password textView.
+- If we click on the forgotpassword? TextView navigates to the reset password page where user can reset his/her password and that gets updated in the database.
+- If we click on the Admin? TextView it navigates to the Admin login page where we have given only one admin credentials with password.
+- If we click on the login button after giving the correct username and password this page navigates to the user home maintenance activity.
+  
 ### User Maintainence Screen:
 
 ![user maintainence](https://github.com/vineetha1996/event-expo/blob/master/screens/userMaintainence.JPG)
