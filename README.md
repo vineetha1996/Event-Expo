@@ -72,7 +72,7 @@ The following activities are taken in the device "Nexus 5X API 26".
 - User can see his order history in this page.
 
 ### Individual Events
-![IndividualEvents](https://github.com/vineetha1996/event-expo/blob/master/screens/individual_events.JPG)
+![IndividualEvents](https://github.com/vineetha1996/event-expo/blob/master/screens/individualEvent.JPG)
 
 - User can see tha complete details of the event and book tickets.
 
@@ -83,12 +83,12 @@ The following activities are taken in the device "Nexus 5X API 26".
 - After the finishing the payment user will be redirected to the order history page.
 
 ### Reset Password Page:
-![Reset Password](https://github.com/vineetha1996/event-expo/blob/master/screens/reset_password.png)
+![Reset Password](https://github.com/vineetha1996/event-expo/blob/master/screens/reset_pswd..JPG)
 
 - In this page user can reset his password by giving the email address and new password and then click on the update button.
 
 ### Signup page:
-![Signup page](https://github.com/vineetha1996/event-expo/blob/master/screens/signup.png)
+![Signup page]()
 
 - If the user is new to the app he should signup first by giving the details which have asked.
 
