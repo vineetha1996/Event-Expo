@@ -9,11 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".UserProfileActivity"></activity>
+        <activity android:name=".RequestEventActivity"></activity>
+        <activity android:name=".UserProfileActivity" />
         <activity android:name=".UserMaintenanceActivity" />
         <activity android:name=".IndividualEventDetailsActivity" />
         <activity android:name=".SignupActivity" />
-        <activity android:name=".ProfileActivity" />
+        <activity android:name=".ForgotPasswordActivity" />
         <activity android:name=".RegisterEventsActivity" />
         <activity android:name=".MaintainEventsActivity" />
         <activity android:name=".OrderHistoryActivity" />
