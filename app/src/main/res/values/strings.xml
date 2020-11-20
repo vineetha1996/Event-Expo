@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">Event-Expo</string>
+    <string name="please_try_again">Please try again</string>
+
+    <string name="username_cannot_empty">Username cannot be empty!</string>
+    <string name="first_cannot_empty">First cannot be empty!</string>
+    <string name="last_cannot_empty">Last cannot be empty!</string>
+    <string name="username_not_exist">Username not exist!</string>
+    <string name="wrong_credentials">Wrong Credentials!</string>
+    <string name="password_cannot_empty">Password cannot be empty!</string>
+    <string name="confirm_password_cannot_empty">Confirm Password cannot be empty!</string>
+    <string name="email_cannot_empty">Email cannot be empty!</string>
+    <string name="email_not_valid">Email is not valid!</string>
+    <string name="mobile_cannot_empty">Mobile cannot be empty!</string>
+    <string name="name_cannot_empty">Name cannot be empty!</string>
+    <string name="date_cannot_empty">Date cannot be empty!</string>
+    <string name="time_cannot_empty">Time cannot be empty!</string>
+    <string name="price_cannot_empty">Price cannot be empty!</string>
+    <string name="user_uploaded_successfully">User Uploaded Successfully!</string>
+    <string name="description_cannot_empty">Description cannot be empty!</string>
+    <string name="event_uploaded">Event Uploaded!</string>
+    <string name="password_must_be_same">Password must be same</string>
+    <string name="event_requested">Event Requested!</string>
+
 </resources>
