@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.event_expo.other.SharedPref;
+
 public class UserMaintenanceActivity extends AppCompatActivity {
 
     private TextView homieTV,profileTV,orderHistoryTV, aboutTV;
@@ -40,8 +42,11 @@ public class UserMaintenanceActivity extends AppCompatActivity {
         logoutbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                SharedPref sharedPref= SharedPref.getInstance();
+                sharedPref.clearSharedPref(UserMaintenanceActivity.this);
                 Intent logoutIntent = new Intent(UserMaintenanceActivity.this, LoginActivity.class);
                 startActivity(logoutIntent);
+                finish();
             }
         });
 
@@ -76,10 +81,18 @@ public class UserMaintenanceActivity extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.tvRequestEvent).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i= new Intent(UserMaintenanceActivity.this,RequestEventActivity.class);
+                startActivity(i);
+            }
+        });
+
 
     }
     public void moveToOther(View v){
-        Intent ii=new Intent(this,UserHomeActivity.class);
-        startActivity(ii);
+        Intent i=new Intent(this,UserHomeActivity.class);
+        startActivity(i);
     }
 }
