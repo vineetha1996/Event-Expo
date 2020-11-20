@@ -42,7 +42,7 @@ The following activities are taken in the device "Nexus 5X API 26".
 
 ### User Maintainence Screen:
 
-![user maintainence](https://github.com/vineetha1996/event-expo/blob/master/screens/user_matianence.JPG)
+![user maintainence](https://github.com/vineetha1996/event-expo/blob/master/screens/userMaintainence.JPG)
 
 - In this screen it provides a list of pages like home, profile, about app, order history.
 - If we click on home text view it navigates to user home page.
@@ -52,7 +52,7 @@ The following activities are taken in the device "Nexus 5X API 26".
 
 ### User Home Page:
 
-![user_home](https://github.com/vineetha1996/event-expo/blob/master/screens/user_home.JPG)
+![user_home](https://github.com/vineetha1996/event-expo/blob/master/screens/userHome.JPG)
 
 - In the Home page user can see the list of events.
 
@@ -72,7 +72,7 @@ The following activities are taken in the device "Nexus 5X API 26".
 - User can see his order history in this page.
 
 ### Individual Events
-![IndividualEvents](https://github.com/vineetha1996/event-expo/blob/master/screens/individual_events.JPG)
+![IndividualEvents](https://github.com/vineetha1996/event-expo/blob/master/screens/individualEvent.JPG)
 
 - User can see tha complete details of the event and book tickets.
 
@@ -83,12 +83,12 @@ The following activities are taken in the device "Nexus 5X API 26".
 - After the finishing the payment user will be redirected to the order history page.
 
 ### Reset Password Page:
-![Reset Password](https://github.com/vineetha1996/event-expo/blob/master/screens/reset_password.png)
+![Reset Password](https://github.com/vineetha1996/event-expo/blob/master/screens/reset_pswd..JPG)
 
 - In this page user can reset his password by giving the email address and new password and then click on the update button.
 
 ### Signup page:
-![Signup page](https://github.com/vineetha1996/event-expo/blob/master/screens/signup.png)
+![Signup page]()
 
 - If the user is new to the app he should signup first by giving the details which have asked.
 
@@ -100,7 +100,7 @@ The following activities are taken in the device "Nexus 5X API 26".
 - When we click on the Login button it navigates to the Admin Home page.
 
 ### Admin Home page:
-![Admin Home](https://github.com/vineetha1996/event-expo/blob/master/screens/admin_home.png)
+![Admin Home](https://github.com/vineetha1996/event-expo/blob/master/screens/adminHome.JPG)
 
 - Admin home page where admin can add, delete the events and maintain user details.
 - When we click on the Event Management button it navigates to Maintain Event page where we have event details like name, date, time, category and description.
@@ -109,7 +109,7 @@ The following activities are taken in the device "Nexus 5X API 26".
 
 ### Maintain Event Page:
 
-![Maintain Event](https://github.com/vineetha1996/event-expo/blob/master/screens/maintain_events.png)
+![Maintain Event](https://github.com/vineetha1996/event-expo/blob/master/screens/maintainEvents.JPG)
 
 - Where admin can maintain all the events and their data.
 
