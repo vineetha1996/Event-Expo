@@ -88,7 +88,7 @@ The following activities are taken in the device "Nexus 5X API 26".
 - In this page user can reset his password by giving the email address and new password and then click on the update button.
 
 ### Signup page:
-![Signup page]()
+![Signup page](https://github.com/vineetha1996/event-expo/blob/master/screens/signUp.JPG)
 
 - If the user is new to the app he should signup first by giving the details which have asked.
 
