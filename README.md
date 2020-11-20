@@ -113,11 +113,11 @@ The following activities are taken in the device "Nexus 5X API 26".
 
 - Where admin can maintain all the events and their data.
 
-### Registered Events Page:
+### Requested Events Page:
 
-![User Registration](https://github.com/vineetha1996/event-expo/blob/master/screens/register_events.png)
+![Requested Events](https://github.com/vineetha1996/event-expo/blob/master/screens/requestEvents.JPG)
 
-- Where admin can manage the events which users have registered.
+- Where admin can view the events data requested by individual user.
 
 ### Add event page:
 
