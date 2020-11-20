@@ -31,6 +31,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="30dp"
         android:layout_marginRight="20dp"
+        android:maxLength="16"
         android:background="@drawable/input_design"
         android:hint="Enter the Name on Card"
         android:inputType="textPersonName"
