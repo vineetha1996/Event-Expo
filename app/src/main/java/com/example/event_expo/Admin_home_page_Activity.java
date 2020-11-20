@@ -8,6 +8,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.event_expo.other.Constants;
+import com.example.event_expo.other.SharedPref;
+
 public class Admin_home_page_Activity extends AppCompatActivity {
     private Button eventManagementbtn, userRegbtn, adminlogoutbtn;
     private TextView kayakTV, TennisTV, pettingTV, harvestTV, soccerTV, paintingTV;
@@ -40,7 +43,6 @@ public class Admin_home_page_Activity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent managementIntent = new Intent(Admin_home_page_Activity.this, MaintainEventsActivity.class);
                 startActivity(managementIntent);
-
             }
         });
 
@@ -49,6 +51,7 @@ public class Admin_home_page_Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Admin_home_page_Activity.this, Add_Event_Activity.class );
+                intent.putExtra(Constants.eventType,Constants.tennis);
                 startActivity(intent);
             }
         });
@@ -57,6 +60,7 @@ public class Admin_home_page_Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Admin_home_page_Activity.this, Add_Event_Activity.class );
+                intent.putExtra(Constants.eventType,Constants.harvesting);
                 startActivity(intent);
             }
         });
@@ -65,6 +69,7 @@ public class Admin_home_page_Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Admin_home_page_Activity.this, Add_Event_Activity.class );
+                intent.putExtra(Constants.eventType,Constants.petting);
                 startActivity(intent);
             }
         });
@@ -73,6 +78,7 @@ public class Admin_home_page_Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Admin_home_page_Activity.this, Add_Event_Activity.class );
+                intent.putExtra(Constants.eventType,Constants.soccer);
                 startActivity(intent);
             }
         });
@@ -81,6 +87,7 @@ public class Admin_home_page_Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Admin_home_page_Activity.this, Add_Event_Activity.class );
+                intent.putExtra(Constants.eventType,Constants.painting);
                 startActivity(intent);
             }
         });
@@ -89,6 +96,7 @@ public class Admin_home_page_Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Admin_home_page_Activity.this, Add_Event_Activity.class );
+                intent.putExtra(Constants.eventType,Constants.kayaking);
                 startActivity(intent);
 
             }
@@ -104,8 +112,11 @@ public class Admin_home_page_Activity extends AppCompatActivity {
         adminlogoutbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                SharedPref sharedPref = SharedPref.getInstance();
+                sharedPref.clearSharedPref(Admin_home_page_Activity.this);
                 Intent intent = new Intent(Admin_home_page_Activity.this, LoginActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -113,6 +124,7 @@ public class Admin_home_page_Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Admin_home_page_Activity.this, Add_Event_Activity.class );
+                intent.putExtra(Constants.eventType,Constants.kayaking);
                 startActivity(intent);
             }
         });
@@ -121,6 +133,7 @@ public class Admin_home_page_Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Admin_home_page_Activity.this, Add_Event_Activity.class );
+                intent.putExtra(Constants.eventType,Constants.soccer);
                 startActivity(intent);
 
             }
@@ -130,6 +143,7 @@ public class Admin_home_page_Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Admin_home_page_Activity.this, Add_Event_Activity.class );
+                intent.putExtra(Constants.eventType,Constants.painting);
                 startActivity(intent);
 
             }
@@ -139,6 +153,7 @@ public class Admin_home_page_Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Admin_home_page_Activity.this, Add_Event_Activity.class );
+                intent.putExtra(Constants.eventType,Constants.petting);
                 startActivity(intent);
 
             }
@@ -148,6 +163,7 @@ public class Admin_home_page_Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Admin_home_page_Activity.this, Add_Event_Activity.class );
+                intent.putExtra(Constants.eventType,Constants.harvesting);
                 startActivity(intent);
             }
         });
@@ -156,6 +172,7 @@ public class Admin_home_page_Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Admin_home_page_Activity.this, Add_Event_Activity.class );
+                intent.putExtra(Constants.eventType,Constants.tennis);
                 startActivity(intent);
             }
         });
