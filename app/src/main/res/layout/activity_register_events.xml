@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,36 +10,31 @@
         android:id="@+id/regTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Registered Events Data"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Request Events Data"
         android:textAlignment="center"
+        android:textColor="#070707"
         android:textSize="30sp"
         android:textStyle="bold"
-        android:textColor="#070707"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvRequestEvent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/regTV"
+        android:layout_marginTop="16dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regTV"
+        tools:itemCount="6"
+        tools:listitem="@layout/item_event"
         />
 
-    <TextView
-        android:id="@+id/orderTV"
-        android:layout_width="270dp"
-        android:layout_height="138dp"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="110dp"
-        android:background="@drawable/input_design"
-        android:text="\nEvent Name: Cricket tournament \n Date: 09/16/2020 \n Order Time: 12:00pm \n Customer Name: Vineetha Yenugula \n Email Id: Vineethay18@gmail.com"
-        android:textColor="#070707" />
 
-
-    <TextView
-        android:id="@+id/order2TV"
-        android:layout_width="270dp"
-        android:layout_height="138dp"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="300dp"
-        android:background="@drawable/input_design"
-        android:text="\nEvent Name: FootBall tournament \n Date: 09/19/2020 \n Order Time: 16:00pm \n Customer Name: Jennifor Anniston \n Email Id: anniston@gmail.com"
-        android:textColor="#070707" />
-
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
