@@ -71,6 +71,11 @@ The following activities are taken in the device "Nexus 5X API 26".
 
 - User can see his order history in this page.
 
+### Request Events Page:
+![UserRequest](https://github.com/vineetha1996/event-expo/blob/master/screens/userRequest.JPG)
+
+- Through this page user can request admin to host his/her personal event within our app by providing details.
+
 ### Individual Events
 ![IndividualEvents](https://github.com/vineetha1996/event-expo/blob/master/screens/individualEvent.JPG)
 
