@@ -98,7 +98,12 @@ The following activities are taken in the device "Nexus 5X API 26".
 ### Signup page:
 ![Signup page](https://github.com/vineetha1996/event-expo/blob/master/screens/signUp.JPG)
 
-- If the user is new to the app he should signup first by giving the details which have asked.
+- If a new user wants to register, he/she will have to sign up first.
+- By filing all the fields, if not, we have provided warning messages which as to fill in all filed, one can sign up into the application.
+- If the user did not enter an email in the email field, it will give a warming message.
+- If the user did not give a number in the phone number field, it will give a warming message.
+- Similarly, multiple warming messages will appear if the user has not registered properly. This is done to prevent the application from crashing.
+- The user details will then be stored in the database and will be redirected to the login page to sign in.
 
 
 ### Admin Login Screen:
@@ -106,6 +111,8 @@ The following activities are taken in the device "Nexus 5X API 26".
 
 - Admin should enter username and passwotd to login as a admin.
 - When we click on the Login button it navigates to the Admin Home page.
+- The credentials have to match with the ones stored in the database, then only will they get access inside.
+- For wrong or empty fields, we have provided messages which pop-up as warnings.
 
 ### Admin Home page:
 ![Admin Home](https://github.com/vineetha1996/event-expo/blob/master/screens/adminHome.JPG)
