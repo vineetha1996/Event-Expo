@@ -52,17 +52,18 @@ The following activities are taken in the device "Nexus 5X API 26".
 - If we click on profile text view it navigates to the profile page where user can find details he/she provided and he can also edit details, it gets updated in the database   too. 
 - If we click on about app text view it navigates to the about app page where user can find the detail description about the app.
 - If we click on order history text view it navigates to the order history page where user can see the list of events he added into his cart.
+- User can request an event in this acrivity.
 
 ### User Home Page:
 
 ![user_home](https://github.com/vineetha1996/event-expo/blob/master/screens/userHome.JPG)
 
-- In the Home page user can see the list of events.
+- In the List of Events activity user can see the events available on that day.
 
 ### User profile page:
 ![User Profile](https://github.com/vineetha1996/event-expo/blob/master/screens/profile.JPG)
 
-- User can maintain his profile by updating the required fields.
+- User can maintain his profile by modifying and updating the fields it directly reflects in the database.
 
 ### About App Page:
 ![About App](https://github.com/vineetha1996/event-expo/blob/master/screens/about_app.JPG)
@@ -82,29 +83,28 @@ The following activities are taken in the device "Nexus 5X API 26".
 ### Individual Events
 ![IndividualEvents](https://github.com/vineetha1996/event-expo/blob/master/screens/individualEvent.JPG)
 
-- User can see tha complete details of the event and book tickets.
+- User can see the complete details of the event, add the quantities he is willing and book tickets .
 
 ### Payment Page
 ![Payment](https://github.com/vineetha1996/event-expo/blob/master/screens/payment.JPG)
 
 - User can complete the payment using his card details.
-- After the finishing the payment user will be redirected to the order history page.
+- After the filling the details user will be redirected to the order history page.
 
 ### Reset Password Page:
 ![Reset Password](https://github.com/vineetha1996/event-expo/blob/master/screens/reset_pswd..JPG)
 
-- In this page user can reset his password by giving the email address and new password and then click on the update button.
+- In this page user can reset his password by giving the unique username and different password.
 
 ### Signup page:
 ![Signup page](https://github.com/vineetha1996/event-expo/blob/master/screens/signUp.JPG)
 
 - If the user is new to the app he should signup first by giving the details which have asked.
 
-
 ### Admin Login Screen:
 ![AdminLogin Screen](https://github.com/vineetha1996/event-expo/blob/master/screens/admin_login.png)
 
-- Admin should enter username and passwotd to login as a admin.
+- Admin should enter username and password to get login.
 - When we click on the Login button it navigates to the Admin Home page.
 
 ### Admin Home page:
