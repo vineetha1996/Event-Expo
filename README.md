@@ -52,18 +52,17 @@ The following activities are taken in the device "Nexus 5X API 26".
 - If we click on profile text view it navigates to the profile page where user can find details he/she provided and he can also edit details, it gets updated in the database   too. 
 - If we click on about app text view it navigates to the about app page where user can find the detail description about the app.
 - If we click on order history text view it navigates to the order history page where user can see the list of events he added into his cart.
-- User can request an event in this acrivity.
 
 ### User Home Page:
 
 ![user_home](https://github.com/vineetha1996/event-expo/blob/master/screens/userHome.JPG)
 
-- In the List of Events activity user can see the events available on that day.
+- In the Home page user can see the list of events.
 
 ### User profile page:
 ![User Profile](https://github.com/vineetha1996/event-expo/blob/master/screens/profile.JPG)
 
-- User can maintain his profile by modifying and updating the fields it directly reflects in the database.
+- User can maintain his profile by updating the required fields.
 
 ### About App Page:
 ![About App](https://github.com/vineetha1996/event-expo/blob/master/screens/about_app.JPG)
@@ -83,32 +82,30 @@ The following activities are taken in the device "Nexus 5X API 26".
 ### Individual Events
 ![IndividualEvents](https://github.com/vineetha1996/event-expo/blob/master/screens/individualEvent.JPG)
 
-- User can see the complete details of the event, add the quantities he is willing and book tickets .
+- User can see tha complete details of the event and book tickets.
 
 ### Payment Page
 ![Payment](https://github.com/vineetha1996/event-expo/blob/master/screens/payment.JPG)
 
 - User can complete the payment using his card details.
-- After the filling the details user will be redirected to the order history page.
+- After the finishing the payment user will be redirected to the order history page.
 
 ### Reset Password Page:
 ![Reset Password](https://github.com/vineetha1996/event-expo/blob/master/screens/reset_pswd..JPG)
 
-- In this page user can reset his password by giving the unique username and different password.
+- In this page user can reset his password by giving the email address and new password and then click on the update button.
 
 ### Signup page:
 ![Signup page](https://github.com/vineetha1996/event-expo/blob/master/screens/signUp.JPG)
 
 - If the user is new to the app he should signup first by giving the details which have asked.
 
+
 ### Admin Login Screen:
 ![AdminLogin Screen](https://github.com/vineetha1996/event-expo/blob/master/screens/admin_login.png)
 
-- Admin should enter username and password to get login.
+- Admin should enter username and passwotd to login as a admin.
 - When we click on the Login button it navigates to the Admin Home page.
-
-- Admin Credentials:  Id - bhanu
-                      Pas - 123456
 
 ### Admin Home page:
 ![Admin Home](https://github.com/vineetha1996/event-expo/blob/master/screens/adminHome.JPG)
@@ -123,22 +120,35 @@ The following activities are taken in the device "Nexus 5X API 26".
 
 - On clicking the image button in the admin home page, it redirects to add event page with pre-filled category name.
 
-### Maintain Event Page:
+### Maintain Events Page:
 
 ![Maintain Event](https://github.com/vineetha1996/event-expo/blob/master/screens/maintainEvents.JPG)
 
-- Where admin can maintain all the events and their data.
+- This is where the admin can view all the events that have been hosted on the application so far.
+- On clicking on individual event, it will redirect to the Add event page which acts as an edit page.
+- One can change or modify the exsisting event details when desired.
+- Once, the details are edited and the admin clicks on the add button, it redirects to the Maintain events page, where he/she can see the changes made.
+- It reflects the changes in the Maintain events page and also changes the data in the database.
+- This page returns back to the admin home page.
 
 ### Requested Events Page:
 
 ![Requested Events](https://github.com/vineetha1996/event-expo/blob/master/screens/requestEvents.JPG)
 
-- Where admin can view the events data requested by individual user.
+- This is the page where the admin can view all the requested events by the users.
+- Once, he/she reads these event requests, they can host the events by adding the details provided by the user to the database.
+- So, this page is a view only page.
+- The admin has to go to the Add event page to host/create these requests.
+- The admin can go back to the admin home page to create the requested events.
 
 ### Add event page:
 
 ![User Registration](https://github.com/vineetha1996/event-expo/blob/master/screens/add_event.png)
 
-- Details are added to the database by Admin.
+- The Admin can add new events by filling in the details in the input fields provided.
+- The name, time, price, date and details of the event have to specified which will then be added to the database when clicked on the 'Add' button.
+- The new event will then be displayed in the user side events list page, displayed below the previous events.
+- We have given the maximum and minimum tickets sold in the database. 1-20 tickets can only be sold. 
+- Once the admin has added the new event details, the screen will redirecte to the admin home page.
 
 
