@@ -107,6 +107,9 @@ The following activities are taken in the device "Nexus 5X API 26".
 - Admin should enter username and password to get login.
 - When we click on the Login button it navigates to the Admin Home page.
 
+- Admin Credentials:  Id - bhanu
+                      Pas - 123456
+
 ### Admin Home page:
 ![Admin Home](https://github.com/vineetha1996/event-expo/blob/master/screens/adminHome.JPG)
 
