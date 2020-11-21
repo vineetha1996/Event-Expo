@@ -118,7 +118,12 @@ The following activities are taken in the device "Nexus 5X API 26".
 ### Add events with pre-filled category
 ![AdminPrefilled](https://github.com/vineetha1996/event-expo/blob/master/screens/imageAdd.JPG)
 
-- On clicking the image button in the admin home page, it redirects to add event page with pre-filled category name.
+- When the admin clicks on the buttons under the images in the admin home page, it redirects to this page.
+- Here, there are pre-filled fields in the type section.
+- This is like a quick add event option.
+- The admin can edit the type if they need but this is a faster method with pre-filled fields.
+- Once, the event details are added, on click, the event gets strored in the database and will reflect in the manage events page and events list page in the user side.
+- Then it will redirect to the admin home page.
 
 ### Maintain Events Page:
 
