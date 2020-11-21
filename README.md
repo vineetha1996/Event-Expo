@@ -47,11 +47,11 @@ The following activities are taken in the device "Nexus 5X API 26".
 
 ![user maintainence](https://github.com/vineetha1996/event-expo/blob/master/screens/userMaintainence.JPG)
 
-- In this screen it provides a list of pages like home, profile, about app, order history.
-- If we click on home text view it navigates to user home page.
-- If we click on profile text view it navigates to the profile page.
-- If we click on about app text view it navigates to the about app page.
-- If we click on order history text view it navigates to the order history page.
+- In maintenance page we have provided an few options for the user like List of Events available, user profile, about app and order history where user can see all the events   which he had added in to the cart.
+- If we click on List of Events it directly navigates to the events available on that day with necessary details of event.
+- If we click on profile text view it navigates to the profile page where user can find details he/she provided and he can also edit details, it gets updated in the database   too. 
+- If we click on about app text view it navigates to the about app page where user can find the detail description about the app.
+- If we click on order history text view it navigates to the order history page where user can see the list of events he added into his cart.
 
 ### User Home Page:
 
