@@ -95,12 +95,18 @@ public class PaymentActivity extends AppCompatActivity {
             return false;
         }
 
+        if (cardNumber.length()!=16) {
+            Toast.makeText(this, "Card number has to have 16 digits!", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+
         if (cardExpirationDate.isEmpty()) {
             Toast.makeText(this, "Card expiration date cannot be empty!", Toast.LENGTH_SHORT).show();
             return false;
         }
 
-        if (Utils.isValidExpirationDate(cardExpirationDate)) {
+
+        if (!Utils.isValidExpirationDate(cardExpirationDate)) {
             Toast.makeText(this, "Expiration Date must be in XX/XX format", Toast.LENGTH_SHORT).show();
             return false;
         }
