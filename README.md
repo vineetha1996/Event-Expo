@@ -1,5 +1,8 @@
 # Project Name: Event-Expo.
 
+## Logo
+![logo](https://github.com/vineetha1996/event-expo/blob/master/app/src/main/res/drawable/logo.png)
+
 ## Team Members:
 1. Vineetha Yenugula.
 2. Annie Samarpitha Chandolu.

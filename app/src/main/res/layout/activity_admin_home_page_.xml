@@ -223,7 +223,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/soccerTV"
-            android:layout_marginTop="24dp">
+            android:layout_marginTop="20dp">
 
             <Button
                 android:id="@+id/event_management_btn"
@@ -233,7 +233,7 @@
                 android:layout_marginEnd="24dp"
                 android:background="@drawable/buttons"
                 android:padding="17dp"
-                android:text="Event Management"
+                android:text="Manage Events"
                 android:textAllCaps="false"
                 android:textColor="@android:color/black"
                 android:textSize="25sp"
@@ -252,7 +252,7 @@
                 android:layout_marginEnd="20dp"
                 android:background="@drawable/buttons"
                 android:padding="17dp"
-                android:text="User Registration"
+                android:text="Requested Events"
                 android:textAllCaps="false"
                 android:textColor="@android:color/black"
                 android:textSize="25sp"
@@ -274,7 +274,7 @@
             android:layout_alignParentEnd="true"
             android:layout_marginStart="100dp"
             android:layout_marginLeft="60dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="100dp"
 
             android:layout_marginBottom="32dp"
