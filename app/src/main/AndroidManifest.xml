@@ -9,6 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".RequestEventActivity"></activity>
         <activity android:name=".UserProfileActivity" />
         <activity android:name=".UserMaintenanceActivity" />
@@ -24,13 +32,7 @@
         <activity android:name=".Add_Event_Activity" />
         <activity android:name=".Admin_login_Activity" />
         <activity android:name=".UserHomeActivity" />
-        <activity android:name=".LoginActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
     </application>
 
 </manifest>
