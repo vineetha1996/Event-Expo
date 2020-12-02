@@ -103,6 +103,11 @@ public class SignupActivity extends AppCompatActivity {
             return false;
         }
 
+        if (number.length()!=10){
+            Toast.makeText(this, "Phone Number has to be 10 digits!", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+
         if (password.isEmpty()){
             Toast.makeText(this, getString(R.string.password_cannot_empty), Toast.LENGTH_SHORT).show();
             return false;
