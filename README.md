@@ -16,6 +16,10 @@ EventExpo app allows users to reserve tickets for all kinds of events which incl
 - Username: bhanu
 - Password: 123456
 
+## User credentials
+- Username: Annie08
+- Password: annie123
+
 ## Main Feature:
 Proposed an oppurtunity to Book different Categories and different kinds of Events like Kayaking, Painting, Cricket Online in single application.
 
