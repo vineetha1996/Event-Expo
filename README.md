@@ -23,6 +23,16 @@ EventExpo app allows users to reserve tickets for all kinds of events which incl
 ## Main Feature:
 Proposed an oppurtunity to Book different Categories and different kinds of Events like Kayaking, Painting, Cricket Online in single application.
 
+## List of Features(User side)
+1. User Login, let’s user login (Completed)
+2. User Signup for new user data (Completed)
+3. List of events, user side (Completed)
+4. Individual event details which allows us to book tickets (Completed)
+5. Payment page which stores static data (Completed)
+6. Order History page which displays the payments done so far (Completed)
+7. Request Event page, which let’s the user host their personal events (Completed)
+8. User Logout (Completed)
+
 ## Risky Components:
 ##### Uses an outside API:
 - The app will be hosted on an external API, i.e., Gennymotion. This will give us clearer idea about layout and navigation of the pages developed.
