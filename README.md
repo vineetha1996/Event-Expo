@@ -41,6 +41,17 @@ Proposed an oppurtunity to Book different Categories and different kinds of Even
 5. Requested Events where the users have requested to host their personal events, the admin can verify and create new event accordingly. (Completed)
 6. Admin Logout module (Completed)
 
+## Persistent Data
+- We have four collections in our Firebase which are:
+- Admin - stores admin username, password.
+- Event - stores event details, i.e., name, date, description, price, and time.
+- User - stores user details, i.e., username, first name, last name, email, mobile number, and password. 
+- Requested Event - stores the details that user has provided, which are, event name, date, description, price, time, and user name.
+
+## API/Library used
+- We have used Firebase Database for storing the data of user and admin.
+- We have used Google API for adding the Logo in the application. 
+
 ## Individual Contributions:
 
 - [Vineetha Yenugula](https://github.com/vineetha1996/event-expo/commits?author=vineetha1996)
