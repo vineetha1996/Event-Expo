@@ -33,13 +33,13 @@ Proposed an oppurtunity to Book different Categories and different kinds of Even
 7. Request Event page, which let’s the user host their personal events (Completed)
 8. User Logout (Completed)
 
-## Risky Components:
-##### Uses an outside API:
-- The app will be hosted on an external API, i.e., Gennymotion. This will give us clearer idea about layout and navigation of the pages developed.
-##### Requires Functionality NOT discussed:
-- As we will be using Firebase for real-time data handling, it will be a bit difficult to navigate through this new functionalities, adding and retreiving data.
-##### Requires Functionality will be discussed:
-- Data base services and handling is yet to be understood and will be discussed later.
+## List of Features(Admin side)
+1. Admin Login page (Completed)
+2. Admin home page (Completed)
+3. Add events with pre-filled categories (Completed)
+4. Events Management page (Completed)
+5. Requested Events where the users have requested to host their personal events, the admin can verify and create new event accordingly. (Completed)
+6. Admin Logout module (Completed)
 
 ## Individual Contributions:
 
@@ -48,6 +48,13 @@ Proposed an oppurtunity to Book different Categories and different kinds of Even
 - [Alekhya Jaddu](https://github.com/vineetha1996/event-expo/commits?author=alekhyajaddu)
 - [BhanuPrakash Thota](https://github.com/vineetha1996/event-expo/commits?author=BhanuprakashThota)
 
+## Risky Components:
+##### Uses an outside API:
+- The app will be hosted on an external API, i.e., Gennymotion. This will give us clearer idea about layout and navigation of the pages developed.
+##### Requires Functionality NOT discussed:
+- As we will be using Firebase for real-time data handling, it will be a bit difficult to navigate through this new functionalities, adding and retreiving data.
+##### Requires Functionality will be discussed:
+- Data base services and handling is yet to be understood and will be discussed later.
 
 ## Activities/Screens:
 The following activities are taken in the device "Nexus 5X API 26".
